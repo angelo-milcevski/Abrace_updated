@@ -24,16 +24,85 @@
             opacity:0.8;
         }
     
+        
+        .hidden{
+            display: none;
+        }
     
     
     </style>
     <script>
+        
+        
+          /* chair - top, footswing-left, blanket-right */
+     function redchair(){
+        var redchair = document.getElementById("redchair");
+        var blanket = document.getElementById("blanket");
+        var footswing = document.getElementById("footswing");
+         
+        var topfootswing = document.getElementById("topfootswing");
+        var topblanket = document.getElementById("topblanket");
+        var leftredchair = document.getElementById("leftredchair");
+        var rightredchair = document.getElementById("rightredchair");
+
+
+    
+         redchair.style="display:block";
+         footswing.style="display:block";
+         blanket.style="display:block";
+         
+         topfootswing.style="display:none";
+         topblanket.style="display:none";
+         leftredchair.style="display:none";
+         rightredchair.style="display:none";
+    }
+        
+        /* footswing - top, chair-left, blanket-right */
     function footswing(){
         var redchair = document.getElementById("redchair");
-        var footswing = document.getElementById("footswing");
         var blanket = document.getElementById("blanket");
+        var footswing = document.getElementById("footswing");
         
-        redchair.style("background-color:black;");
+        var rightredchair = document.getElementById("rightredchair");
+        var leftredchair = document.getElementById("leftredchair");
+        var topfootswing = document.getElementById("topfootswing");
+        var topblanket = document.getElementById("topblanket");
+        
+        topfootswing.style="display:block";
+        leftredchair.style="display:block";
+        blanket.style="display:block";
+        
+        redchair.style="display:none";
+        footswing.style="display:none";
+        topblanket.style="display:none";
+        rightredchair.style="display:none";
+        
+    }
+      
+        
+        /* blanket - top, footswing-left, chair - right */
+       function blanket(){
+        var redchair = document.getElementById("redchair");
+        var blanket = document.getElementById("blanket");
+        var footswing = document.getElementById("footswing");
+
+
+        var topfootswing = document.getElementById("topfootswing");
+        var rightredchair = document.getElementById("rightredchair");
+        var topblanket = document.getElementById("topblanket");
+        var leftredchair = document.getElementById("leftredchair");
+
+
+           
+        topblanket.style="display:block";
+        footswing.style="display:block";
+        rightredchair.style="display:block"; 
+           
+        redchair.style="display:none";
+        blanket.style="display:none";
+        topfootswing.style="display:none";
+        leftredchair.style="display:none";
+        
     }
         
     
@@ -71,13 +140,24 @@
     <div class="chair_product_section">
       <div class="chair_gallery">
         <div class="top_product">
-          <img src="assets/images/ABRACE_redchair.png" alt="chair" id="redchair" >
+            
+         <img src="assets/images/ABRACE_redchair.png" alt="chair" id="redchair" onclick="redchair()" >
+            
+        <img src="assets/images/ABRACE_footswing.png" class="hidden" alt="footswing" id="topfootswing" onclick="footswing()">
+            
+        <img src="assets/images/Blanket.png" alt="blanket" class="hidden" id="topblanket" onclick="blanket()">
+
+
         </div>
         <div class="bottom_left_product">
       <img src="assets/images/ABRACE_footswing.png" alt="footswing" id="footswing" onclick="footswing()">
+     <img src="assets/images/ABRACE_redchair.png" class="hidden" alt="chair" id="leftredchair" onclick="redchair()" >
+
         </div>
         <div class="bottom_right_product">
-          <img src="assets/images/Blanket.png" alt="" id="blanket">
+          <img src="assets/images/Blanket.png" alt="" id="blanket" onclick="blanket()">
+          <img src="assets/images/ABRACE_redchair.png" class="hidden" alt="chair" id="rightredchair" onclick="redchair()" >
+
         </div>
       </div>
       <div class="product_description">
