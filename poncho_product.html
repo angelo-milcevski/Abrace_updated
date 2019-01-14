@@ -13,7 +13,7 @@
     
     <style>
     
-     #read_more, #read_less{
+    /* #read_more, #read_less{
         padding: 1px 16px;
         border: none;
         font-size: 15px;
@@ -27,7 +27,7 @@
             display: none;
         }
         
-        .rev3{display: none;}
+        .rev3{display: none;}*/
     </style>
     <script>
     
@@ -50,12 +50,12 @@
      function read_less(){
     var rev3 = document.getElementsByClassName("pon_rev3");
     var rev4 = document.getElementsByClassName("pon_rev4");
-    var read_more = document.getElementById("read_more");
+    var read_more = document.getElementsByClassName("read_more");
     var read_less = document.getElementById("read_less");
         
         rev3[0].style ="display: none";
         rev4[0].style ="display: none";
-        read_more.style="display:inline";
+        read_more[0].style="display:inline";
         read_less.style="display:none";  
      };
     
@@ -80,7 +80,8 @@
   <main>
     <div class="poncho_product_section">
       <div class="poncho_gallery">
-        <div class="big_product_image"></div>
+        <div class="big_product_image">
+          </div>
         <div class="small_left_image"></div>
         <div class="small_middle_image"></div>
         <div class="small_right_image"></div>
@@ -125,7 +126,7 @@
             </p>
           </div>
             
-            <button class="button" id="read_more" onclick="read_more()">Read More</button>
+            <button class="read_more" onclick="read_more()">Read More</button>
           <div class="rev3">
             <p>“That feeling of being cradled, like cradling
               a child - that calming effect. Like when you
@@ -144,7 +145,7 @@
               she could actually sit there”
               <br>- (translated) Nurse in a psychiatric emergency section</p>
           </div>
-        <button class="button" id="read_less" onclick="read_less()">Read Less</button>
+        <button class="read_less" onclick="read_less()">Read Less</button>
 
         </div>
       </div>
