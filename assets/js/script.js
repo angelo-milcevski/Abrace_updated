@@ -68,7 +68,7 @@
       var topblanket = document.getElementById("topblanket");
 
       topfootswing.style = "display:block";
-      leftredchair.style = "display:block";
+      leftredchair.style = "display:block;cursor:pointer;";
       blanket.style = "display:block";
         
      footswingtext[0].style ="display:block";
@@ -111,7 +111,7 @@
 
       topblanket.style = "display:block";
       footswing.style = "display:block";
-      rightredchair.style = "display:block";
+      rightredchair.style = "display:block;cursor:pointer;";
 
       redchair.style = "display:none";
       blanket.style = "display:none";
