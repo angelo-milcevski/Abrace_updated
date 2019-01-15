@@ -132,6 +132,67 @@ body {
   display: none;
 }
 
+/* CHAIR FORM */
+
+/*
+input[type=text],input[type=email]{
+ width: 80%;
+  padding: 11px 2px;
+    margin: 2px;
+  display: inline-block;
+  border: 1px solid #7f7f7f;
+  box-sizing: border-box;
+}
+
+form{
+    
+  width: 100%;
+  padding: 4px 30px;
+  margin: 8px 0;
+  box-sizing: border-box;
+    text-align: left;
+    
+    
+  
+}*/
+
+form{
+
+}
+
+#submit{
+    margin: 5px;
+    
+}
+
+label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 110px;
+    text-align: right;
+    padding: 4px;
+}
+input{
+  display: inline-block;
+  float: left;
+    height: 20px;
+
+}
+#comment{
+    height: 20%;
+}
+
+label,input,{
+    margin: 5px;
+}
+
+
+/* PLACEHOLDER ALIGN  */
+::-webkit-input-placeholder { text-align:left; }
+
+input:-moz-placeholder { text-align:left; }
+
 .fa-times {
   color: white;
   cursor: pointer;
