@@ -38,18 +38,22 @@ body {
   background-color: #1d353f;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 37px;
+  padding-top: 29px;
     color: white;
 }
 
 .slider a {
   color: white;
-<<<<<<< HEAD
   display: block;
   padding-top: 5px;
   text-decoration: none;
   font-size: 25px;
-  line-height: 1.5;
+  line-height: 0;
+  /* padding: 37px; */
+    padding: 37px;
+      float: left;
+
+    
 }
 
 .slider a:hover {
@@ -57,7 +61,8 @@ body {
 }
 
 .slider_links {
-  padding-top: 20px;
+    width: 100%;
+
 }
 
 .fa-times {
@@ -67,14 +72,12 @@ body {
   float: left;
   font-size: 20px;
   margin-left: 20px;
-=======
     display: block;
-    padding-top: 5px;
+    padding-top: px;
     text-decoration: none;
     font-size: 25px;
     line-height: 0;
     text-align: left;
-    padding: 37px;
     /*    margin-left: 37px;*/
 
 }
