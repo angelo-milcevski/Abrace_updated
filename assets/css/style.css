@@ -174,6 +174,7 @@ input {
   border: 1px solid #ccc;
   box-sizing: border-box;
   box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
 #comment {
@@ -358,8 +359,18 @@ main {
   top: -25px;
 }
 
-.banner {}
+.webshop_banner img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 220px;
+  left: 0%;
+  z-index: -1;
+}
 
+.webshop_text{
+    z-index: 1;
+}
 .banner img {
   width: 100%;
   height: 100%;
@@ -511,12 +522,13 @@ main {
   z-index: 1;
 }
 
-.heading_news {
+.heading_news{
   width: 80%;
   height: 30%;
   font-size: 30px;
   margin-top: 5%;
 }
+
 
 .news_text {
   width: 80%;
@@ -550,6 +562,15 @@ main {
       background-color: #bd944c;
 
 }
+
+
+.heading_sponsors{
+  width: 80%;
+  height: 30%;
+  font-size: 30px;
+  margin-top:5%;
+
+}
 .sponsors {
   width: 80%;
   height: 150px;
@@ -563,7 +584,7 @@ main {
 
 footer {
   width: 80%;
-  height: 150px;
+  height: 250px;
   /*border: 2px solid red;*/
   margin: 0% 5% 0% 5%;
   display: flex;
@@ -573,6 +594,15 @@ footer {
   background-color: #f2f2f2;
 }
 
+.footer_heading{
+    float: left;
+
+}
+
+.footer_list{
+    float: left;
+    list-style: none;
+}
 .part1 {}
 
 .part2 {}
@@ -811,6 +841,10 @@ footer {
   display: flex;
   width: 48%;
   height: 350px;
+}
+.contact_heading{
+    display: inline-block;
+    width: 100%;
 }
 
 .contact {
@@ -2458,7 +2492,7 @@ footer {
 
 /* PONCHO */
 .poncho_product_section {
-  >>>>>>>5fb4595e376da1689ecd235499d765d881123cb8 width: 100%;
+  width: 100%;
   height: 1000px;
   margin: 0%;
   background-color: white;
@@ -2569,18 +2603,16 @@ footer {
   height: 350px;
 }
 
-<<<<<<< HEAD
 
 /* Tablet WEB SHOP */
 .webshop_section {
-  =======
+}
 
   /* Tablet WEB SHOP */
   .webshop_section {
-    >>>>>>>5fb4595e376da1689ecd235499d765d881123cb8 width: 100%;
+     width: 100%;
     height: 525px;
-    border: 2px solid #B5B5B5;
-    border-radius: 12px;
+  
     margin: 0%;
     background-color: white;
     display: block;
@@ -2592,20 +2624,152 @@ footer {
   .webshop_section {
     width: 100%;
     height: 525px;
-    border: 2px solid #B5B5B5;
-    border-radius: 12px;
     margin: 0%;
     background-color: white;
     display: block;
     z-index: 1;
     overflow: hidden;
   }
+
+
+ .heading_news{
+        font-size: 30px;
+        right: 66%;
+     margin-top: 5%;
+
+        
+    }
+    .news_text{
+        width: 40%;
+        right: 50%;
+        font-size: 18px;
+        text-align: left;
+    }
+    
+    .subscribe{
+        left: 50%;
+        bottom: 50%;
+        line-height: 2;
+        font-size: 20px;
+    }
+    
+    .sub{
+         left: 45%;
+        bottom: 40%;
+        }
+    .sub input{
+        width: 22%;
+    }
+    .heading_sponsors{
+        width: 100%;
+    }
 }
 
 /*One size smaller as the original*/
-@media only screen and (min-width: 1000px) and (max-width:1409px) {}
+@media only screen and (min-width: 1000px) and (max-width:1409px) {
+    
+  
+    
+    
+}
 
 /*One size larger as the original*/
-@media only screen and (min-width:1600px) {}
+@media only screen and (min-width:1600px) {
+    
+   .banner img {
+    width: 78%;
+    position: relative;
+    bottom: 225px;
+    left: 0%;
+    z-index: -1;
+  }
+    
+     .blue_chair_box img {
+  width: 80%;
+  height: 100%;
+  left: 10%;
+  z-index: -1;
+  opacity: 1;
+}
+    
+    .heading_news{
+        font-size: 35px;
+        right: 65%;
 
-@media only screen and (min-width:1800px) {}
+        
+    }
+    .news_text{
+        width: 40%;
+        right: 50%;
+        font-size: 22px;
+        text-align: left;
+    }
+    
+    .subscribe{
+        left: 50%;
+        bottom: 50%;
+        line-height: 2;
+        font-size: 35px;
+    }
+    
+    .sub{
+         left: 45%;
+        bottom: 30%;
+        }
+    .sub input{
+        width: 22%;
+    }
+    .heading_sponsors{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (min-width:1800px) {
+    
+    .banner img {
+    width: 65%;
+    position: relative;
+    bottom: 225px;
+    left: 0%;
+    z-index: -1;
+  }
+    
+  .blue_chair_box img {
+  width: 80%;
+  height: 100%;
+  left: 10%;
+  z-index: -1;
+  opacity: 1;
+}
+    .heading_news{
+        font-size: 35px;
+        right: 66%;
+
+        
+    }
+    .news_text{
+        width: 40%;
+        right: 50%;
+        font-size: 22px;
+        text-align: left
+    }
+    
+    .subscribe{
+        left: 50%;
+        bottom: 50%;
+        line-height: 2;
+        font-size: 35px;
+    }
+    
+    .sub{
+         left: 45%;
+        bottom: 30%;
+        }
+    .sub input{
+        width: 22%;
+    }
+    .heading_sponsors{
+        width: 100%;
+    }
+}
