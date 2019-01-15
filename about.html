@@ -25,15 +25,21 @@
   </header>
     
     <div class="slider">
-        <i class="fas fa-times" onclick="close_slider()"></i><br>
-        
-        <div class="slider_links">
-        <a href="#">Home</a>
-        <a href="#">Products</a>
+      <i class="fas fa-times" onclick="close_slider()"></i><br>
+
+      <div class="slider_links">
+        <a href="index.html" >Home</a>
+          
+        <a onclick="dropdown()">Products  <i class="fas fa-angle-down"></i></a>
+          <div class="dropdown_content" id="dropdown_content" style="display: none;">
+                  <a href="chair_product.html">Chair</a>
+                  <a href="poncho_product.html">Poncho</a>
+
+          
+          </div>
         <a href="about.html">About us</a>
       </div>
     </div>
-    
     
     
   <main>
