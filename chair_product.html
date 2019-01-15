@@ -12,97 +12,8 @@
 
   <title>ABRACE</title>
 
-  <style>
-    #redchair:hover {
-      opacity: 0.8;
-
-    }
-
-    #footswing:hover {
-      opacity: 0.8;
-    }
-
-    #blanket:hover {
-      opacity: 0.8;
-    }
-
-
-    .hidden {
-      display: none;
-    }
-
-  </style>
   <script>
-    /* chair - top, footswing-left, blanket-right */
-    function redchair() {
-      var redchair = document.getElementById("redchair");
-      var blanket = document.getElementById("blanket");
-      var footswing = document.getElementById("footswing");
-
-      var topfootswing = document.getElementById("topfootswing");
-      var topblanket = document.getElementById("topblanket");
-      var leftredchair = document.getElementById("leftredchair");
-      var rightredchair = document.getElementById("rightredchair");
-
-
-
-      redchair.style = "display:block";
-      footswing.style = "display:block";
-      blanket.style = "display:block";
-
-      topfootswing.style = "display:none";
-      topblanket.style = "display:none";
-      leftredchair.style = "display:none";
-      rightredchair.style = "display:none";
-    }
-
-    /* footswing - top, chair-left, blanket-right */
-    function footswing() {
-      var redchair = document.getElementById("redchair");
-      var blanket = document.getElementById("blanket");
-      var footswing = document.getElementById("footswing");
-
-      var rightredchair = document.getElementById("rightredchair");
-      var leftredchair = document.getElementById("leftredchair");
-      var topfootswing = document.getElementById("topfootswing");
-      var topblanket = document.getElementById("topblanket");
-
-      topfootswing.style = "display:block";
-      leftredchair.style = "display:block";
-      blanket.style = "display:block";
-
-      redchair.style = "display:none";
-      footswing.style = "display:none";
-      topblanket.style = "display:none";
-      rightredchair.style = "display:none";
-
-    }
-
-
-    /* blanket - top, footswing-left, chair - right */
-    function blanket() {
-      var redchair = document.getElementById("redchair");
-      var blanket = document.getElementById("blanket");
-      var footswing = document.getElementById("footswing");
-
-
-      var topfootswing = document.getElementById("topfootswing");
-      var rightredchair = document.getElementById("rightredchair");
-      var topblanket = document.getElementById("topblanket");
-      var leftredchair = document.getElementById("leftredchair");
-
-
-
-      topblanket.style = "display:block";
-      footswing.style = "display:block";
-      rightredchair.style = "display:block";
-
-      redchair.style = "display:none";
-      blanket.style = "display:none";
-      topfootswing.style = "display:none";
-      leftredchair.style = "display:none";
-
-    }
+   
 
   </script>
 </head>
@@ -158,7 +69,8 @@
         </div>
       </div>
       <div class="product_description">
-        <div class="description_text">
+          
+        <div class="description_text_chair">
           <h1>THIS IS BIG CHAIR</h1>
           <p>One of their products is the chair that is built up in a special way.
             The foreclosure enables the chance to block out surrounding disturbance which creates a private space for the user.
@@ -166,20 +78,30 @@
             The monotonous movement of foot-swing contributes to an activity based stimuli, which is good for relieving restlessness. Moreover, if the foot-swing is not being used it can be pulled back so it isn’t in the way.
             Note: You can buy the different pieces separately as well.
           </p>
-          <!---  <li class="list1">
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-            <ul>point one of the un-ordered list of the un-ordered list</ul>
-
-          </li> --->
         </div>
+          
+          <div class="description_text_footswing">
+          <h1>THIS IS FOOTSWING</h1>
+          <p>One of their products is the chair that is built up in a special way.
+            The foreclosure enables the chance to block out surrounding disturbance which creates a private space for the user.
+            The blankets have special weight that gives a feeling of holding a baby. This provides grounding and has a calming effect on the body.
+            The monotonous movement of foot-swing contributes to an activity based stimuli, which is good for relieving restlessness. Moreover, if the foot-swing is not being used it can be pulled back so it isn’t in the way.
+            Note: You can buy the different pieces separately as well.
+          </p>
+        </div>
+          
+          <div class="description_text_blanket">
+          <h1>THIS IS BLANKET</h1>
+          <p>One of their products is the chair that is built up in a special way.
+            The foreclosure enables the chance to block out surrounding disturbance which creates a private space for the user.
+            The blankets have special weight that gives a feeling of holding a baby. This provides grounding and has a calming effect on the body.
+            The monotonous movement of foot-swing contributes to an activity based stimuli, which is good for relieving restlessness. Moreover, if the foot-swing is not being used it can be pulled back so it isn’t in the way.
+            Note: You can buy the different pieces separately as well.
+          </p>
+        </div>
+          
+          
+          
       </div>
       <div class="reviews_section">
         <div class="reviews">
