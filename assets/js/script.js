@@ -5,8 +5,8 @@
 
 
         
-        slider[0].style="width:250px";
-        slider_links[0].style="display:block";
+        slider[0].style="width:300px";
+        slider_links[0].style="display:inline-block";
        arrow[0].style="display:inline-block"
 
 
@@ -24,6 +24,31 @@
 
 
     }
+
+
+
+function dropdown(){
+        var content=document.getElementById("dropdown_content");
+
+        content.style.display="none";
+
+    
+    
+         if (content.style.display === "none") {
+    content.style.display = "block";
+  
+  }else{
+      content.style.display = "none";
+  }
+}
+
+            //content.style = "display:block";
+
+    
+    
+    
+    
+
     
 
 
@@ -125,3 +150,93 @@
       leftredchair.style = "display:none";
 
     }
+
+
+
+/* Full poncho-top, poncho-left, poncho pillow-right */
+
+
+    function fullponcho(){
+        
+        var fullponcho = document.getElementById("fullponcho");
+        var topponcho = document.getElementById("topponcho");
+        var toppillow = document.getElementById("toppillow");
+        
+        var left_poncho = document.getElementById("left_poncho");
+        var left_full_poncho = document.getElementById("left_full_poncho");
+        
+        var right_pillow = document.getElementById("rightpillow");
+        var right_full_poncho = document.getElementById("right_full_poncho");
+        
+        fullponcho.style = "display:block";
+        left_poncho.style = "display:block";
+        right_pillow.style = "display:block";
+        
+        
+        toppillow.style = "display:none";
+       topponcho .style = "display:none";
+        left_full_poncho.style = "display:none";
+        right_full_poncho.style = "display:none";
+        
+        
+    };
+
+
+
+
+/* poncho-top, full poncho -left, poncho pillow-right */
+
+    function poncho(){
+        
+       var fullponcho = document.getElementById("fullponcho");
+        var topponcho = document.getElementById("topponcho");
+        var toppillow = document.getElementById("toppillow");
+        
+        var left_poncho = document.getElementById("left_poncho");
+        var left_full_poncho = document.getElementById("left_full_poncho");
+        
+        var right_pillow = document.getElementById("rightpillow");
+        var right_full_poncho = document.getElementById("right_full_poncho");
+        
+        topponcho.style = "display:block";
+        left_full_poncho.style = "display:block";
+        right_pillow.style = "display:block";
+        
+        
+        fullponcho.style = "display:none";
+       toppillow .style = "display:none";
+        right_full_poncho.style = "display:none";
+        left_poncho.style ="display:none";
+
+        
+        
+    };
+
+/* poncho pillow-top, poncho - left, full poncho - right*/
+
+
+function pillow(){
+    
+        var fullponcho = document.getElementById("fullponcho");
+        var topponcho = document.getElementById("topponcho");
+        var toppillow = document.getElementById("toppillow");
+        
+        var left_poncho = document.getElementById("left_poncho");
+        var left_full_poncho = document.getElementById("left_full_poncho");
+        
+        var right_pillow = document.getElementById("rightpillow");
+        var right_full_poncho = document.getElementById("right_full_poncho");
+        
+        toppillow.style = "display:block";
+        left_poncho.style = "display:block";
+        right_full_poncho.style = "display:block";
+        
+        
+        fullponcho.style = "display:none";
+       topponcho.style = "display:none";
+        left_full_poncho.style = "display:none";
+        right_pillow.style ="display:none";
+    
+    
+}
+

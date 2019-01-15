@@ -91,14 +91,34 @@
     <div class="poncho_product_section">
       <div class="poncho_gallery">
         <div class="big_product_image">
+            
+             <img src="assets/images/ABRACE_bluechair.png" alt="full poncho" id="fullponcho" onclick="fullponcho()">
+             <img src="assets/images/ABRACE_poncho.png" alt="poncho" id="topponcho" onclick="poncho()" class="hidden">
+             <img src="assets/images/ABRACE_pillow.png" alt="pillow" id="toppillow" onclick="pillow()" class="hidden">
+            
           </div>
-        <div class="small_left_image"></div>
-        <div class="small_middle_image"></div>
-        <div class="small_right_image"></div>
+          
+        <div class="small_left_image">
+          
+             <img src="assets/images/ABRACE_poncho.png" alt="poncho" id="left_poncho" onclick="poncho()">
+             <img src="assets/images/ABRACE_bluechair.png" alt="full poncho" id="left_full_poncho" onclick="fullponcho()" class="hidden">
+          </div>
+          
+          
+      <!--  <div class="small_middle_image"></div>-->
+        <div class="small_right_image">
+             <img src="assets/images/ABRACE_pillow.png" alt="pillow" id="rightpillow" onclick="pillow()" >
+            <img src="assets/images/ABRACE_bluechair.png" alt="full poncho" id="right_full_poncho" onclick="fullponcho()" class="hidden">
+
+
+          
+          
+          
+          </div>
       </div>
       <div class="poncho_product_description">
         <div class="poncho_description">
-          <h1>THIS IS BIG CHAIR</h1>
+          <h1>THIS IS PONCHO PRODUCT</h1>
           <li class="poncho_list">
             <ul>point one of the un-ordered list of the un-ordered list</ul>
             <ul>point one of the un-ordered list of the un-ordered list</ul>
@@ -160,7 +180,28 @@
         </div>
       </div>
       <div class="poncho_contact_section">
-        <div class="poncho_contact"></div>
+        <div class="poncho_contact">
+          
+             <form>
+  <label for="fname" >First Name:</label>
+  <input type="text" id="fname" name="fname" placeholder="First Name">
+              
+  <label for="lname">Last Name:</label>
+  <input type="text" id="lname" name="lname" placeholder="Last Name">
+              
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" placeholder="Email">
+              
+  <label for="comment">Comment:</label>
+  <input type="text" id="comment" name="comment" placeholder="Write a comment">
+              
+             <br> <button class="button" id="submit">Submit</button>
+              
+              
+</form>
+          
+          
+          </div>
       </div>
     </div>
 

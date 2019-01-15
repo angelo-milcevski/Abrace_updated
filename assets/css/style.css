@@ -52,6 +52,8 @@ body {
   /* padding: 37px; */
   padding: 37px;
   text-align: left;
+
+    
 }
 
 .slider a:hover {
@@ -60,6 +62,21 @@ body {
 
 .slider_links {
   width: 100%;
+}
+
+.fa-angle-down{
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown_content{
+    display: none;
+}
+
+.dropdown_content a{
+    font-size: 23px;
+    padding-left:50px;
+    
 }
 
 .fa-times {
@@ -128,55 +145,47 @@ body {
   display: none;
 }
 
-.hidden {
-  display: none;
-}
+
 
 /* CHAIR FORM */
 
-/*
-input[type=text],input[type=email]{
- width: 80%;
-  padding: 11px 2px;
-    margin: 2px;
-  display: inline-block;
-  border: 1px solid #7f7f7f;
-  box-sizing: border-box;
-}
+
+
 
 form{
-    
-  width: 100%;
-  padding: 4px 30px;
-  margin: 8px 0;
-  box-sizing: border-box;
-    text-align: left;
-    
-    
-  
-}*/
-
-form{
+    width: 100%;
 
 }
 
 #submit{
-    margin: 5px;
-    
+    color: white;
+    background-color: #1d353f;
+    border: none;
+    font-size: 20px;
+    border-radius: 2px;
+    padding: 12px 45px;
+    float: right;
+    margin-right: 75px;
+
 }
 
 label {
-    display: inline-block;
+    display: block;
     float: left;
     clear: left;
-    width: 110px;
+    width: 120px;
     text-align: right;
-    padding: 4px;
+    padding: 15px;
+    
 }
 input{
-  display: inline-block;
-  float: left;
-    height: 20px;
+    width: 50%;
+    padding: 12px 18px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.2);
 
 }
 #comment{
@@ -186,6 +195,10 @@ input{
 label,input,{
     margin: 5px;
 }
+
+
+
+
 
 
 /* PLACEHOLDER ALIGN  */
