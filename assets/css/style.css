@@ -41,14 +41,19 @@ body {
 .slider a{
   color: white;
     display: block;
-    padding-top: 20px;
+    padding-top: 5px;
     text-decoration: none;
     font-size: 25px;
     line-height: 1.5;
+    
 }
 
 .slider a:hover{
     background-color: darkgray;
+}
+
+.slider_links{
+    padding-top: 20px;
 }
 .fa-times{
     color: white;
