@@ -737,14 +737,16 @@ footer {
   flex-wrap: wrap;
 }
 
-.description_text_chair {
+.description_text_chair, .description_text_footswing, .description_text_blanket {
   /*  border: 1px solid blue;*/
   display: flex;
   height: 550px;
   width: 92%;
   margin: auto;
   flex-wrap: wrap;
+    text-align: left;
 }
+
 
 .reviews_section {
   /*  border: 1px solid red;*/
