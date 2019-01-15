@@ -99,15 +99,18 @@ body {
 /* IMAGE GALLERY */
     #redchair:hover {
       opacity: 0.8;
+     cursor: pointer;
 
     }
 
     #footswing:hover {
       opacity: 0.8;
+     cursor: pointer;
     }
 
     #blanket:hover {
       opacity: 0.8;
+    cursor: pointer;
     }
 
 
