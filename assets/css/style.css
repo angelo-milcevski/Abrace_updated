@@ -31,10 +31,10 @@ body {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #1d353f;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 15px;
+  padding-top: 37px;
     color: white;
 }
 
@@ -44,12 +44,16 @@ body {
     padding-top: 5px;
     text-decoration: none;
     font-size: 25px;
-    line-height: 1.5;
+    line-height: 0;
+    text-align: left;
+    padding: 37px;
+    /*    margin-left: 37px;*/
     
 }
 
 .slider a:hover{
-    background-color: darkgray;
+    background-color: #1a2f38;
+    cursor: pointer;
 }
 
 .slider_links{
@@ -62,6 +66,7 @@ body {
     float: left;
     font-size: 20px;
     margin-left: 20px;
+    
 }
 
 
