@@ -554,17 +554,6 @@ main {
   align-items: center;
 }
 
-.news {
-  width: 80%;
-  height: 150px;
-  /*border: 2px solid red;*/
-  margin: 0% 5% 0% 5%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0% 5% 0% 5%;
-  align-items: center;
-    
-}
 
 
 footer {
@@ -703,6 +692,7 @@ footer {
 .chair_product_section img:hover{
     opacity: .9;
 }
+
 
 
 .bottom_left_product {
