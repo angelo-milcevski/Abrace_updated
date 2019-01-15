@@ -467,8 +467,8 @@ main {
 
 .foot_swing_box {
   width: 33%;
-  height: 50%;
-  margin: -2% 2% .6% .5%;
+
+  height: 106.75%;  margin: -2% 2% .6% .5%;
   background-color: white;
   float: right;
   overflow: hidden;
