@@ -34,7 +34,7 @@ body {
   top: 0;
   right: 0;
   position: fixed;
-  z-index: 1; 
+  z-index: 1;
   background-color: #1d353f;
   overflow-x: hidden;
   transition: 0.5s;
@@ -51,8 +51,6 @@ body {
   /* padding: 37px; */
   padding: 37px;
   text-align: left;
-
-    
 }
 
 .slider a:hover {
@@ -63,19 +61,18 @@ body {
   width: 100%;
 }
 
-.fa-angle-down{
-    cursor: pointer;
-    display: none;
+.fa-angle-down {
+  cursor: pointer;
+  display: none;
 }
 
-.dropdown_content{
-    display: none;
+.dropdown_content {
+  display: none;
 }
 
-.dropdown_content a{
-    font-size: 23px;
-    padding-left:50px;
-    
+.dropdown_content a {
+  font-size: 23px;
+  padding-left: 50px;
 }
 
 .fa-times {
@@ -144,66 +141,57 @@ body {
   display: none;
 }
 
-
-
 /* CHAIR FORM */
-
-
-
-
-form{
-    width: 100%;
-
+form {
+  width: 100%;
 }
 
-#submit{
-    color: white;
-    background-color: #1d353f;
-    border: none;
-    font-size: 20px;
-    border-radius: 2px;
-    padding: 12px 45px;
-    float: right;
-    margin-right: 75px;
-
+#submit {
+  color: white;
+  background-color: #1d353f;
+  border: none;
+  font-size: 20px;
+  border-radius: 2px;
+  padding: 12px 45px;
+  float: right;
+  margin-right: 75px;
 }
 
 label {
-    display: block;
-    float: left;
-    clear: left;
-    width: 120px;
-    text-align: right;
-    padding: 15px;
-    
-}
-input{
-    width: 50%;
-    padding: 12px 18px;
-    margin: 10px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-	box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.2);
-
-}
-#comment{
-    height: 20%;
+  display: block;
+  float: left;
+  clear: left;
+  width: 120px;
+  text-align: right;
+  padding: 15px;
 }
 
-label,input,{
-    margin: 5px;
+input {
+  width: 50%;
+  padding: 12px 18px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+#comment {
+  height: 20%;
+}
 
-
-
-
+label, input, {
+  margin: 5px;
+}
 
 /* PLACEHOLDER ALIGN  */
-::-webkit-input-placeholder { text-align:left; }
+::-webkit-input-placeholder {
+  text-align: left;
+}
 
-input:-moz-placeholder { text-align:left; }
+input:-moz-placeholder {
+  text-align: left;
+}
 
 .fa-times {
   color: white;
@@ -427,7 +415,6 @@ main {
 
 .blue_chair_box:hover {
   cursor: pointer;
-    
 }
 
 .foot_swing_box:hover {
@@ -442,7 +429,6 @@ main {
   cursor: pointer;
   opacity: .5;
 }
-
 
 .blue_chair_box {
   width: 61%;
@@ -467,8 +453,8 @@ main {
 
 .foot_swing_box {
   width: 33%;
-
-  height: 106.75%;  margin: -2% 2% .6% .5%;
+  height: 106.65%;
+  margin: -2% 2% 0% .5%;
   background-color: white;
   float: right;
   overflow: hidden;
@@ -480,16 +466,16 @@ main {
 }
 
 .foot_swing_box img {
-  width: 90%;
-  height: 100%;
+  width: 100%;
+  height: 70%;
   position: relative;
-  bottom: 30%;
+  bottom: 0%;
   left: 15%;
   z-index: -1;
   opacity: 1;
 }
 
-.red_chair_box {
+/*.red_chair_box {
   width: 33%;
   height: 52%;
   margin: .9% 2% -.1% .5%;
@@ -510,8 +496,7 @@ main {
   right: 20%;
   z-index: -1;
   opacity: 1;
-}
-
+}*/
 .newsfeed_section {
   width: 60%;
   height: 500px;
@@ -541,6 +526,14 @@ main {
 .news_text2 {
   width: 60%;
   height: 20%;
+  margin-bottom: 50px;
+}
+
+.subscribe {
+  width: 80%;
+  height: 10%;
+  margin-bottom: 5px;
+  margin-left: -100px;
 }
 
 .sponsors {
@@ -553,8 +546,6 @@ main {
   padding: 0% 5% 0% 5%;
   align-items: center;
 }
-
-
 
 footer {
   width: 80%;
@@ -611,6 +602,7 @@ footer {
 
 .about_us_heading {
   padding-top: 30px;
+  margin-left: -40px;
   width: 100%;
   font-size: 30px;
 }
@@ -618,7 +610,7 @@ footer {
 .about_us_box {
   margin-top: 50px;
   padding-top: -200px;
-  margin-left: -80px;
+  margin-left: -30px;
   width: 80%;
   height: 250px;
   justify-content: space-around;
@@ -689,11 +681,9 @@ footer {
   height: 100%;
 }
 
-.chair_product_section img:hover{
-    opacity: .9;
+.chair_product_section img:hover {
+  opacity: .9;
 }
-
-
 
 .bottom_left_product {
   /*  border: 1px solid blue;*/
@@ -740,17 +730,6 @@ footer {
   width: 92%;
   margin: auto;
   flex-wrap: wrap;
-}
-
-.description_text_chair h1 {
-  padding-top: 50px;
-  width: 100%;
-}
-
-.description_text_chair p {
-  width: 75%;
-  margin: -100px 0px 0px 72.5px;
-  line-height: 1.5;
 }
 
 .reviews_section {
@@ -1978,23 +1957,20 @@ footer {
 
   /*Tablet content boxes here*/
   .product_section {
-    width: 100.25%;
-    height: 500px;
+    width: 100%;
+    height: 700px;
     /*border: 2px solid #B5B5B5;*/
     border: none;
-    border-radius: 12px;
     margin: -6% 0% 2% 0%;
-    background-color: white
-      /*#f2f2f2*/
-    ;
+    background-color: #f2f2f2;
     display: block;
     z-index: 1;
   }
 
   .blue_chair_box {
-    width: 100%;
-    height: 60%;
-    margin: -.5% 0% 0% 0%;
+    width: 95%;
+    height: 47%;
+    margin: -.5% 0% 0% 2.5%;
     background-color: white;
     float: left;
     overflow: hidden;
@@ -2006,30 +1982,34 @@ footer {
   }
 
   .blue_chair_box img {
-    width: 75%;
+    width: 60%;
+    height: 100%;
     position: relative;
     bottom: 35px;
-    left: 15%;
+    left: 20%;
     z-index: -1;
   }
 
   .foot_swing_box {
-    width: 46%;
-    height: 40%;
-    margin: 4% 2% 0% 0%;
+    width: 95%;
+    height: 47%;
+    margin: 2.5% 0% 0% 2.5%;
     background-color: white;
     float: left;
     overflow: hidden;
   }
 
-  .foot_swing_box h4 {
-    top: 25%;
-    left: -25%;
+  .foot_swing_box h3 {
+    top: 15%;
+    left: -30%;
   }
 
   .foot_swing_box img {
-    width: 100%;
+    width: 60%;
     height: 100%;
+    position: relative;
+    bottom: -35px;
+    left: 20%;
     z-index: -1;
   }
 
@@ -2059,7 +2039,7 @@ footer {
     width: 80%;
     height: 150px;
     /*border: 2px solid red;*/
-    margin: 0% 5% 0% 5%;
+    margin: 5% 5% 0% 5%;
     display: flex;
     justify-content: space-between;
     padding: 0% 5% 0% 5%;
@@ -2232,7 +2212,7 @@ footer {
 /* Tablet */
 .employees {
   width: 60%;
-  height: 250px;
+  height: 350px;
   margin: -6% 0% 0% 0%;
   background-color: #f2f2f2;
   display: flex;
@@ -2249,13 +2229,15 @@ footer {
   padding: 5%;
   height: 50px;
   width: 100%;
-  margin-top: -20px;
+  margin-top: -100px;
+  margin-left: -132.5px;
 }
 
 /* Tablet */
 .about_us_box {
-  margin-top: -50px;
-  width: 100%;
+  margin-top: -250px;
+  width: 150%;
+  margin-left: -130px;
   height: 100px;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -2296,7 +2278,9 @@ footer {
   margin-top: 40px;
 }
 
-.our_story {}
+.our_story {
+  margin-bottom: 100px;
+}
 
 /* Tablet Blue chair */
 .chair_product_section {
