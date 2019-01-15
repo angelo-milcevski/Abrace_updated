@@ -51,7 +51,7 @@ body {
   line-height: 0;
   /* padding: 37px; */
     padding: 37px;
-      float: left;
+      text-align: left;
 
     
 }
@@ -97,13 +97,34 @@ body {
     float: left;
     font-size: 20px;
     margin-left: 20px;
-<<<<<<< HEAD
-
-=======
->>>>>>> f5bf192120a893626d430ccf9808d515f54f4874
->>>>>>> 5fb4595e376da1689ecd235499d765d881123cb8
 }
 
+
+        /* IMAGE GALLERY */
+
+
+        #redchair:hover{
+            opacity:0.8;
+            cursor: pointer;
+            
+        }
+        #footswing:hover{
+            opacity:0.8;
+            cursor: pointer;
+
+        }
+        #blanket:hover{
+            opacity:0.8;
+            cursor: pointer;
+
+        }
+    
+        
+        .hidden{
+            display: none;
+
+        }
+    
 .fa-times {
   color: white;
   cursor: pointer;
