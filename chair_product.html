@@ -8,59 +8,159 @@
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="shortcut icon" href="assets/images/ABRACE_icon.png" />
-<script src="assets/js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 
   <title>ABRACE</title>
+<<<<<<< HEAD
+  <style>
+    #redchair:hover {
+      opacity: 0.8;
+
+    }
+
+    #footswing:hover {
+      opacity: 0.8;
+    }
+
+    #blanket:hover {
+      opacity: 0.8;
+    }
+
+
+    .hidden {
+      display: none;
+    }
+
+  </style>
+  <script>
+    /* chair - top, footswing-left, blanket-right */
+    function redchair() {
+      var redchair = document.getElementById("redchair");
+      var blanket = document.getElementById("blanket");
+      var footswing = document.getElementById("footswing");
+
+      var topfootswing = document.getElementById("topfootswing");
+      var topblanket = document.getElementById("topblanket");
+      var leftredchair = document.getElementById("leftredchair");
+      var rightredchair = document.getElementById("rightredchair");
+
+
+
+      redchair.style = "display:block";
+      footswing.style = "display:block";
+      blanket.style = "display:block";
+
+      topfootswing.style = "display:none";
+      topblanket.style = "display:none";
+      leftredchair.style = "display:none";
+      rightredchair.style = "display:none";
+    }
+
+    /* footswing - top, chair-left, blanket-right */
+    function footswing() {
+      var redchair = document.getElementById("redchair");
+      var blanket = document.getElementById("blanket");
+      var footswing = document.getElementById("footswing");
+
+      var rightredchair = document.getElementById("rightredchair");
+      var leftredchair = document.getElementById("leftredchair");
+      var topfootswing = document.getElementById("topfootswing");
+      var topblanket = document.getElementById("topblanket");
+
+      topfootswing.style = "display:block";
+      leftredchair.style = "display:block";
+      blanket.style = "display:block";
+
+      redchair.style = "display:none";
+      footswing.style = "display:none";
+      topblanket.style = "display:none";
+      rightredchair.style = "display:none";
+
+    }
+
+
+    /* blanket - top, footswing-left, chair - right */
+    function blanket() {
+      var redchair = document.getElementById("redchair");
+      var blanket = document.getElementById("blanket");
+      var footswing = document.getElementById("footswing");
+
+
+      var topfootswing = document.getElementById("topfootswing");
+      var rightredchair = document.getElementById("rightredchair");
+      var topblanket = document.getElementById("topblanket");
+      var leftredchair = document.getElementById("leftredchair");
+
+
+
+      topblanket.style = "display:block";
+      footswing.style = "display:block";
+      rightredchair.style = "display:block";
+
+      redchair.style = "display:none";
+      blanket.style = "display:none";
+      topfootswing.style = "display:none";
+      leftredchair.style = "display:none";
+
+    }
+
+  </script>
+=======
     
+<<<<<<< HEAD
+=======
+   
+>>>>>>> c70fc8b45c64f73af2247b80d18d1e6ed11604bf
+>>>>>>> 273af80fa228d8795d9a32c694ed4f09917740bf
 </head>
 
 <body>
   <header>
     <div class="logo">
       <a href="index.html">
-        <img src="assets/images/ABRACE_logo.svg" alt="abrace logo"  id="logo">
+        <img src="assets/images/ABRACE_logo.svg" alt="abrace logo" id="logo">
       </a>
     </div>
-      <div class="menu" onclick="slide()"><i class="fas fa-bars"></i></div>
+    <div class="menu" onclick="slide()"><i class="fas fa-bars"></i></div>
     <div class="cart" onclick="location.href ='webshop.html'"><i class="fas fa-shopping-cart"></i></div>
   </header>
-    
-    <div class="slider">
-        <i class="fas fa-times" onclick="close_slider()"></i><br>
-        
-        <div class="slider_links">
-  <a href="#">Products</a>
-  <a href="#">About us</a>
-  <a href="#">Contact</a>
-    
-    
-        </div>
+
+  <div class="slider">
+    <i class="fas fa-times" onclick="close_slider()"></i><br>
+
+    <div class="slider_links">
+      <a href="#">Products</a>
+      <a href="#">About us</a>
+      <a href="#">Contact</a>
+
+
     </div>
-    
-    
-    
-    
+  </div>
+
+
+
+
   <main>
     <div class="chair_product_section">
       <div class="chair_gallery">
         <div class="top_product">
-            
-         <img src="assets/images/ABRACE_redchair.png" alt="chair" id="redchair" onclick="redchair()" >
-            
-        <img src="assets/images/ABRACE_footswing.png" class="hidden" alt="footswing" id="topfootswing" onclick="footswing()">
-            
-        <img src="assets/images/ABRACE_blanket.png" alt="blanket" class="hidden" id="topblanket" onclick="blanket()">
+
+          <img src="assets/images/ABRACE_redchair.png" alt="chair" id="redchair" onclick="redchair()">
+
+          <img src="assets/images/ABRACE_footswing.png" class="hidden" alt="footswing" id="topfootswing" onclick="footswing()">
+
+          <img src="assets/images/ABRACE_blanket.png" alt="blanket" class="hidden" id="topblanket" onclick="blanket()">
 
 
         </div>
         <div class="bottom_left_product">
-      <img src="assets/images/ABRACE_footswing.png" alt="footswing" id="footswing" onclick="footswing()">
-     <img src="assets/images/ABRACE_redchair.png" class="hidden" alt="chair" id="leftredchair" onclick="redchair()" >
+          <img src="assets/images/ABRACE_footswing.png" alt="footswing" id="footswing" onclick="footswing()">
+          <img src="assets/images/ABRACE_redchair.png" class="hidden" alt="chair" id="leftredchair" onclick="redchair()">
 
         </div>
         <div class="bottom_right_product">
           <img src="assets/images/ABRACE_blanket.png" alt="" id="blanket" onclick="blanket()">
-          <img src="assets/images/ABRACE_redchair.png" class="hidden" alt="chair" id="rightredchair" onclick="redchair()" >
+          <img src="assets/images/ABRACE_redchair.png" class="hidden" alt="chair" id="rightredchair" onclick="redchair()">
 
         </div>
       </div>
