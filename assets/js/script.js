@@ -30,9 +30,7 @@
 function dropdown(){
         var content=document.getElementById("dropdown_content");
 
-        content.style.display="none";
-
-    
+        
     
          if (content.style.display === "none") {
     content.style.display = "block";
@@ -40,6 +38,9 @@ function dropdown(){
   }else{
       content.style.display = "none";
   }
+    
+    
+    
 }
 
             //content.style = "display:block";

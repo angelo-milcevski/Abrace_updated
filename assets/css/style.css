@@ -48,7 +48,7 @@ body {
   padding-top: 5px;
   text-decoration: none;
   font-size: 25px;
-  line-height: 0;
+  line-height: 10px;
   /* padding: 37px; */
   padding: 37px;
   text-align: left;
@@ -552,6 +552,30 @@ main {
   height: 20%;
 }
 
+.sponsors {
+  width: 80%;
+  height: 150px;
+  /*border: 2px solid red;*/
+  margin: 0% 5% 0% 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 5% 0% 5%;
+  align-items: center;
+}
+
+.news {
+  width: 80%;
+  height: 150px;
+  /*border: 2px solid red;*/
+  margin: 0% 5% 0% 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 5% 0% 5%;
+  align-items: center;
+    
+}
+
+
 footer {
   width: 80%;
   height: 150px;
@@ -561,6 +585,7 @@ footer {
   justify-content: space-between;
   padding: 0% 5% 0% 5%;
   align-items: center;
+  background-color: #f2f2f2;
 }
 
 .part1 {}
