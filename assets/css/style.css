@@ -1172,47 +1172,40 @@ footer {
 
   /*Mobile content boxes here*/
   .product_section {
-    width: 100.25%;
-    height: 400px;
+    width: 100%;
+    height: 600px;
     /*border: 2px solid #B5B5B5;*/
     border: none;
-    border-radius: 12px;
     margin: -6% 0% 2% 0%;
-    background-color: white;
-    /*#f2f2f2*/
+    background-color: #f2f2f2;
     display: block;
     z-index: 1;
   }
 
   /*Mobile */
+  /*Mobile */
+  #product_sentence {
+    cursor: pointer;
+  }
+
+  /*Mobile */
+  #product_sentence {
+    cursor: pointer;
+  }
+
+  #product_sentence {
+    cursor: pointer;
+  }
+
   .blue_chair_box {
-    width: 100%;
-    height: 60%;
-    margin: -.5% 0% 0% 0%;
+    width: 90%;
+    height: 47%;
+    margin: 0% 0% 2.5% 5%;
     background-color: white;
     float: left;
     overflow: hidden;
   }
 
-  /*Mobile */
-  #product_sentence {
-    cursor: pointer;
-  }
-
-  /*Mobile */
-  #product_sentence {
-    cursor: pointer;
-  }
-
-  #product_sentence {
-    cursor: pointer;
-  }
-
-  .blue_chair_box h3 {
-    top: 10%;
-    left: 0%;
-  }
-
   .blue_chair_box h3 {
     top: 10%;
     left: 0%;
@@ -1220,95 +1213,66 @@ footer {
 
   /*Mobile */
   .blue_chair_box img {
-    width: 110%;
+    width: 120%;
+    height: 100%;
     position: relative;
     bottom: 0px;
-    left: 0%;
-    z-index: -1;
-  }
-
-  /*Mobile */
-  .blue_chair_box img {
-    width: 110%;
-    position: relative;
-    bottom: 0px;
-    left: 0%;
+    left: -40%;
     z-index: -1;
   }
 
   /*Mobile */
   .foot_swing_box {
-    width: 46%;
-    height: 40%;
-    margin: 4% 2% 0% 0%;
+    width: 90%;
+    height: 47%;
+    margin: 2.5% 0% -1% 5%;
     background-color: white;
     float: left;
     overflow: hidden;
   }
 
-  HEAD
-
   /*Mobile */
   .foot_swing_box h3 {
-    top: 75%;
+    top: 10%;
     left: 0%;
   }
 
   .foot_swing_box img {
-    width: 300%;
-    position: relative;
-    bottom: 160px;
-    left: -100%;
+    width: 100%;
+    top: 20%;
+    left: 0%;
     z-index: -1;
   }
 
-  .foot_swing_box img {
-    width: 300%;
-    position: relative;
-    bottom: 160px;
-    left: -100%;
-    z-index: -1;
+  .newsfeed_section {
+    height: 700px;
   }
 
-  /*Mobile */
-  .red_chair_box {
-    width: 46%;
-    height: 40%;
-    margin: 4% 0% 0% 2%;
-    background-color: white;
-    float: right;
-    overflow: hidden;
+  .news_text {
+    width: 140%;
   }
 
-  /*Mobile */
-  .red_chair_box {
-    width: 46%;
-    height: 40%;
-    margin: 4% 0% 0% 2%;
-    background-color: white;
-    float: right;
-    overflow: hidden;
+  #sub_email {
+    width: 100%;
   }
 
-  .red_chair_box h3 {
-    top: 75%;
-    right: 0%;
+  .sponsors {
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
-  .red_chair_box img {
-    width: 200%;
-    position: relative;
-    bottom: 100px;
-    right: 52%;
-    z-index: -1;
+  .sponsor1, .sponsor2, .sponsor3, .sponsor4 {
+    width: 48%;
   }
 
   /*Mobile */
   footer {
-    width: 80%;
-    height: 150px;
+    width: 90%;
+    height: 250px;
     /*border: 2px solid red;*/
-    margin: 0% 5% 0% 5%;
+    margin: 0% 5% 0% 0%;
     display: flex;
     justify-content: space-between;
     padding: 0% 5% 0% 5%;
@@ -2835,12 +2799,10 @@ footer {
 
 .about_text {
   height: 150px;
-  width: 100%;
+  width: 80%;
 }
 
-.newsfeed_section {
-  height: 550px;
-}
+.newsfeed_section {}
 
 .heading_news {
   font-size: 30px;
@@ -2848,7 +2810,6 @@ footer {
 }
 
 .news_text {
-  width: 100%;
   left: 5%;
   bottom: 15%;
   font-size: 18px;
