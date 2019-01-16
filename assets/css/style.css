@@ -9,21 +9,8 @@
 }
 
 /* FONTS */
-<<<<<<< HEAD
-/*
-    Comfortaa (for the big headings)
-    Arapey (for subheadings)
-    Lora (for the rest of the text)
-*/
 h1 {
   font-family: 'Raleway', sans-serif;
-=======
-
-
-
-h1{
-font-family: 'Raleway', sans-serif;
->>>>>>> 6cf0b9daad99894d38a6a1a48e10be7a850e1092
 }
 
 h2, h3 {
@@ -618,9 +605,9 @@ main {
   align-items: center;
 }
 
-.sponsors img{
-    width: 60%;
-    padding-top: 50px;
+.sponsors img {
+  width: 60%;
+  padding-top: 50px;
 }
 
 footer {
@@ -632,26 +619,26 @@ footer {
   justify-content: space-between;
   padding: 0% 5% 0% 5%;
   align-items: center;
-  background-color: #f2f2f2;
+  background-color: white;
 }
 
-.footer_info{
-        border: 1px solid black;
-
-}
-.footer_heading{
-    display: block;
-    float: left;
-    bottom: 30%;   
-    border: 1px solid black;
-
+.footer_info {
+  border: 1px solid black;
 }
 
-.footer_list{
-    display: block;
-    float: left;
-    list-style: none;
+.footer_heading {
+  display: block;
+  float: left;
+  bottom: 30%;
+  border: 1px solid black;
 }
+
+.footer_list {
+  display: block;
+  float: left;
+  list-style: none;
+}
+
 .part1 {}
 
 .part2 {}
