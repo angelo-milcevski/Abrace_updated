@@ -885,9 +885,8 @@ footer {
 }
 
 .contact {
-  border: 1px solid blue;
   display: flex;
-  height: 100px;
+  height: 300px;
   width: 100%;
   margin: auto;
 }
@@ -1242,6 +1241,7 @@ footer {
     top: 20%;
     left: 0%;
     z-index: -1;
+<<<<<<< HEAD
   }
 
   .newsfeed_section {
@@ -1265,6 +1265,12 @@ footer {
 
   .sponsor1, .sponsor2, .sponsor3, .sponsor4 {
     width: 48%;
+=======
+  }
+
+  .newsfeed_section {
+    height: 1000px;
+>>>>>>> a3fa32fa9682977f567483dfd1c7a5fdf8d50a26
   }
 
   /*Mobile */
@@ -2582,8 +2588,11 @@ footer {
 .contact_section {
   /*border: 1px solid red;*/
   display: flex;
+  flex-wrap: wrap;
   width: 48%;
   height: 350px;
+    margin-top: -350px;
+    
 }
 
 /* Tablet */
