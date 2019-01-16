@@ -835,10 +835,11 @@ float: right;
   /*  border: 1px solid red;*/
   display: flex;
   width: 48%;
-  height: 300px;
+  height: 350px;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+    margin-left: 3%;
 }
 
 .description_text_chair, .description_text_footswing, .description_text_blanket {
@@ -875,10 +876,10 @@ float: right;
 .rev0 {
   /*  border: 1px solid blue;*/
   display: block;
-  height: 10%;
-  width: 90%;
+  height: 20%;
+  width: 100%;
   float: left;
-    margin-left: -8%;
+    margin-left: 3%;
 }
 
 .rev1 {
@@ -1330,7 +1331,7 @@ float: right;
 /* Tablet Blue chair */
 .chair_product_section {
   width: 100%;
-  height: 1600px;
+  height: 100%;
   margin: 0%;
   background-color: white;
   display: flex;
@@ -1380,7 +1381,6 @@ float: right;
   width: 92%;
   margin: auto;
     text-align: left;
-    bottom: 30%;
 }
 
 /* Tablet */
@@ -1430,10 +1430,9 @@ float: right;
   /*border: 1px solid red;*/
      display: flex;
     width: 48%;
-    height: 350px;
+    height: 450px;
     color: black;
-    bottom: 20%;
-    bottom: 30%;
+    bottom: 50px;
     flex-wrap: wrap;
 }
 
@@ -2529,7 +2528,7 @@ footer {
   width: 100%;
   height: 350px;
     align-content: center;
-        padding-top: 80%;
+        padding-top: 40%;
 }
 
     .reviews_section{
@@ -2551,6 +2550,7 @@ footer {
     display: flex;
     width: 100%;
     height: 200px;
+    padding-top: 100px;
     }
 
   .banner img {
@@ -2651,7 +2651,7 @@ footer {
   width: 100%;
   height: 350px;
     align-content: center;
-        padding-top: 50%;
+        padding-top: 20%;
 }
 
     .reviews_section{
@@ -2745,6 +2745,7 @@ footer {
     display: flex;
     width: 100%;
     height: 200px;
+    padding-top: 100px;
     }
 }
 
@@ -2768,7 +2769,7 @@ footer {
   /*  border: 1px solid red;*/
   display: flex;
   width: 100%;
-  height: 350px;
+  height: 300px;
 }
 
   .logo {
@@ -2790,6 +2791,7 @@ footer {
 .chair_gallery{
     width: 100%;
     display: flex;
+    padding-bottom: 10%;
     }
     
 .chair_gallery img{
@@ -2811,7 +2813,7 @@ footer {
   width: 100%;
   height: 350px;
     align-content: center;
-    padding-top: 40%;
+    padding-top: 20%;
 }
 
     
@@ -3023,8 +3025,14 @@ footer {
   }
     .contact_heading{
         width: 100%;
-        display: block;
         margin-left: 0;
+        
+        /*    display: flex;
+    width: 48%;
+    height: 450px;
+    color: black;
+    bottom: 50px;
+    flex-wrap: wrap;*/
     }
     .contact_section {
   /*border: 1px solid red;*/
@@ -3033,7 +3041,7 @@ footer {
   height: 350px;
   color: black;
     bottom: 20%;
-        bottom: 30%;
+        bottom: 150px;
         flex-wrap: wrap;
 }
 }
