@@ -9,6 +9,7 @@
 }
 
 /* FONTS */
+<<<<<<< HEAD
 /*
     Comfortaa (for the big headings)
     Arapey (for subheadings)
@@ -16,6 +17,13 @@
 */
 h1 {
   font-family: 'Raleway', sans-serif;
+=======
+
+
+
+h1{
+font-family: 'Raleway', sans-serif;
+>>>>>>> 6cf0b9daad99894d38a6a1a48e10be7a850e1092
 }
 
 h2, h3 {
@@ -172,7 +180,7 @@ form {
   border-radius: 2px;
   padding: 12px 45px;
   float: right;
-  margin-right: 75px;
+  margin-right: 151px;
 }
 
 label {
@@ -610,6 +618,11 @@ main {
   align-items: center;
 }
 
+.sponsors img{
+    width: 60%;
+    padding-top: 50px;
+}
+
 footer {
   width: 80%;
   height: 250px;
@@ -622,15 +635,23 @@ footer {
   background-color: #f2f2f2;
 }
 
-.footer_heading {
-  float: left;
+.footer_info{
+        border: 1px solid black;
+
+}
+.footer_heading{
+    display: block;
+    float: left;
+    bottom: 30%;   
+    border: 1px solid black;
+
 }
 
-.footer_list {
-  float: left;
-  list-style: none;
+.footer_list{
+    display: block;
+    float: left;
+    list-style: none;
 }
-
 .part1 {}
 
 .part2 {}
@@ -789,7 +810,7 @@ footer {
   /*  border: 1px solid red;*/
   display: flex;
   width: 48%;
-  height: 600px;
+  height: 300px;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
