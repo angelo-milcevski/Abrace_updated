@@ -9,23 +9,21 @@
 }
 
 /* FONTS */
-
 /*
     Comfortaa (for the big headings)
     Arapey (for subheadings)
     Lora (for the rest of the text)
 */
-
-h1{
-font-family: 'Raleway', sans-serif;
+h1 {
+  font-family: 'Raleway', sans-serif;
 }
 
-h2, h3{
-    font-family: 'Arapey', serif;
+h2, h3 {
+  font-family: 'Arapey', serif;
 }
 
-body{
-    font-family: 'Lora', serif;
+body {
+  font-family: 'Lora', serif;
 }
 
 .responsive {
