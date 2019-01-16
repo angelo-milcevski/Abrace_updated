@@ -9,20 +9,8 @@
 }
 
 /* FONTS */
-<<<<<<< HEAD
-
-/*
-    Comfortaa (for the big headings)
-    Arapey (for subheadings)
-    Lora (for the rest of the text)
-*/
-
-h1{
-font-family: 'Raleway', sans-serif;
-=======
 h1 {
   font-family: 'Raleway', sans-serif;
->>>>>>> 790f74d10a8f11d0cd379efa0fa2ac3e892a6661
 }
 
 h2, h3 {
@@ -32,8 +20,6 @@ h2, h3 {
 body {
   font-family: 'Lora', serif;
 }
-
-
 
 .responsive {
   width: 100%;
@@ -166,13 +152,11 @@ body {
 
 .description_text_footswing, .description_text_blanket {
   display: none;
-    text-align: left;
 }
 
 /* CHAIR FORM */
 form {
   width: 100%;
-    float: left;
 }
 
 #submit {
@@ -203,7 +187,7 @@ input {
   border: 1px solid #ccc;
   box-sizing: border-box;
   box-shadow: inset 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
-    text-align: left;
+  text-align: left;
 }
 
 #comment {
@@ -269,6 +253,7 @@ input:-moz-placeholder {
   animation: 1.5s ease-out appear;
   /* animation-delay: 2s;*/
   animation-fill-mode: both;
+  width: 150px;
 }
 
 @keyframes appear {
@@ -397,16 +382,28 @@ main {
   z-index: -1;
 }
 
-.webshop_text{
-    z-index: 1;
+.webshop_text {
+  z-index: 1;
 }
+
 .banner img {
   width: 100%;
   height: 100%;
   position: relative;
-  bottom: 320px;
-  left: 0%;
+  top: -320px;
   z-index: -1;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .banner img {
+    top: -200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1350px) {
+  .banner img {
+    top: -250px;
+  }
 }
 
 /* description or articles here */
@@ -438,15 +435,14 @@ main {
 }
 
 .read_more_about {
-  width: 20%;
   height: 50px;
-  margin-top: -50px;
+  margin-bottom: 50px;
 }
 
 /* content boxes here*/
 .product_section {
   width: 100%;
-  height: 400px;
+  height: 300px;
   margin: -1% 0% 0% 0%;
   background-color: #f2f2f2;
   display: block;
@@ -455,7 +451,6 @@ main {
 
 .blue_chair_box:hover {
   cursor: pointer;
-    
 }
 
 .foot_swing_box:hover {
@@ -472,9 +467,9 @@ main {
 }
 
 .blue_chair_box {
-  width: 61%;
-  height: 106.75%;
-  margin: -2% 0% -.1% 2%;
+  width: 60%;
+  height: 100%;
+  margin: -2% 0% 0% 2.5%;
   background-color: white;
   float: left;
   overflow: hidden;
@@ -486,22 +481,24 @@ main {
 }
 
 .blue_chair_box img {
-  width: 100%;
+  width: 70%;
   height: 100%;
+  margin-right: -200px;
   z-index: -1;
   opacity: 1;
 }
 
 .foot_swing_box {
-  width: 33%;
-  height: 106.65%;
-  margin: -2% 2% 0% .5%;
+  width: 32.5%;
+  height: 100%;
+  margin: -2% 0% 0% 2.5%;
   background-color: white;
-  float: right;
+  float: left;
   overflow: hidden;
 }
+}
 
-.foot_swing_box h4 {
+.foot_swing_box h3 {
   top: 25%;
   left: -25%;
 }
@@ -525,7 +522,7 @@ main {
   overflow: hidden;
 }
 
-.red_chair_box h4 {
+.red_chair_box h3 {
   top: 25%;
   right: -25%;
 }
@@ -540,7 +537,7 @@ main {
 }*/
 .newsfeed_section {
   width: 60%;
-  height: 500px;
+  height: 400px;
   margin: -1% 0% % 0%;
   padding: 1% 20% 1% 20%;
   background-color: #f2f2f2;
@@ -552,13 +549,12 @@ main {
   z-index: 1;
 }
 
-.heading_news{
+.heading_news {
   width: 80%;
   height: 30%;
   font-size: 30px;
   margin-top: 5%;
 }
-
 
 .news_text {
   width: 80%;
@@ -575,11 +571,10 @@ main {
   width: 80%;
   height: 10%;
   margin-bottom: 5px;
-  margin-left: -100px;
 }
 
-.sub_button{
-     padding: 12px 26px;
+.sub_button {
+  padding: 12px 26px;
   border: none;
   font-size: 15px;
   border-radius: 4px;
@@ -588,27 +583,25 @@ main {
   cursor: pointer;
 }
 
-.sub_button:hover{
-      background-color: #bd944c;
-
+.sub_button:hover {
+  background-color: #bd944c;
 }
 
-
-.heading_sponsors{
+.heading_sponsors {
   width: 80%;
   height: 30%;
   font-size: 30px;
-  margin-top:5%;
-
+  margin-top: 5%;
 }
+
 .sponsors {
   width: 80%;
   height: 150px;
   /*border: 2px solid red;*/
-  margin: 0% 1% 1% 1%;
+  margin: 0% 5% 0% 5%;
   display: flex;
   justify-content: space-between;
-  padding: 0% 4% 0% 8%;
+  padding: 0% 5% 0% 5%;
   align-items: center;
 }
 
@@ -622,8 +615,8 @@ footer {
   height: 250px;
   /*border: 2px solid red;*/
   margin: 0% 5% 0% 5%;
-  flex-wrap: wrap;
   display: flex;
+  justify-content: space-between;
   padding: 0% 5% 0% 5%;
   align-items: center;
   background-color: white;
@@ -802,7 +795,6 @@ footer {
 
 .product_description {
   /*  border: 1px solid red;*/
-
   display: flex;
   width: 48%;
   height: 300px;
@@ -818,9 +810,8 @@ footer {
   width: 92%;
   margin: auto;
   flex-wrap: wrap;
-    text-align: left;
+  text-align: left;
 }
-
 
 .reviews_section {
   /*  border: 1px solid red;*/
@@ -883,29 +874,24 @@ footer {
 .contact_section {
   /*border: 1px solid red;*/
   display: flex;
-  flex-wrap: wrap;
   width: 48%;
-  height: 5px;
+  height: 350px;
 }
 
-.contact_heading{
-    display: block;
-    width: 100%;
-    height: 1px;
+.contact_heading {
+  display: block;
+  width: 100%;
+  height: 20%;
 }
 
 .contact {
-   /* border: 1px solid blue;*/
-    float: left;
-    display: block;
-  /*display: flex;
-  height: 100px;
+  display: flex;
+  height: 300px;
   width: 100%;
-  margin: auto;*/
+  margin: auto;
 }
 
 /* PONCHO PRODUCT */
-
 /* banner picture here*/
 .poncho_product_section {
   width: 100%;
@@ -1058,19 +1044,20 @@ footer {
   display: none;
 }
 
-
-@media only screen and (min-width: 1000px) and (max-width: 1200px) {
-  .banner img {
-    top: -200px;
-  }
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
 }
 
-@media only screen and (min-width: 1200px) and (max-width:1350px) {
-  .banner img {
-    top: -250px;
-  }
+.poncho_contact {
+  border: 1px solid blue;
+  display: flex;
+  height: 400px;
+  width: 92%;
+  margin: auto;
 }
-
 
 /* Responsive*/
 /* Mobile resolution*/
@@ -1184,47 +1171,40 @@ footer {
 
   /*Mobile content boxes here*/
   .product_section {
-    width: 100.25%;
-    height: 400px;
+    width: 100%;
+    height: 600px;
     /*border: 2px solid #B5B5B5;*/
     border: none;
-    border-radius: 12px;
     margin: -6% 0% 2% 0%;
-    background-color: white;
-    /*#f2f2f2*/
+    background-color: #f2f2f2;
     display: block;
     z-index: 1;
   }
 
   /*Mobile */
+  /*Mobile */
+  #product_sentence {
+    cursor: pointer;
+  }
+
+  /*Mobile */
+  #product_sentence {
+    cursor: pointer;
+  }
+
+  #product_sentence {
+    cursor: pointer;
+  }
+
   .blue_chair_box {
-    width: 100%;
-    height: 60%;
-    margin: -.5% 0% 0% 0%;
+    width: 90%;
+    height: 47%;
+    margin: 0% 0% 2.5% 5%;
     background-color: white;
     float: left;
     overflow: hidden;
   }
 
-  /*Mobile */
-  #product_sentence {
-    cursor: pointer;
-  }
-
-  /*Mobile */
-  #product_sentence {
-    cursor: pointer;
-  }
-
-  #product_sentence {
-    cursor: pointer;
-  }
-
-  .blue_chair_box h3 {
-    top: 10%;
-    left: 0%;
-  }
-
   .blue_chair_box h3 {
     top: 10%;
     left: 0%;
@@ -1232,87 +1212,39 @@ footer {
 
   /*Mobile */
   .blue_chair_box img {
-    width: 110%;
+    width: 120%;
+    height: 100%;
     position: relative;
     bottom: 0px;
-    left: 0%;
-    z-index: -1;
-  }
-
-  /*Mobile */
-  .blue_chair_box img {
-    width: 110%;
-    position: relative;
-    bottom: 0px;
-    left: 0%;
+    left: -40%;
     z-index: -1;
   }
 
   /*Mobile */
   .foot_swing_box {
-    width: 46%;
-    height: 40%;
-    margin: 4% 2% 0% 0%;
+    width: 90%;
+    height: 47%;
+    margin: 2.5% 0% -1% 5%;
     background-color: white;
     float: left;
     overflow: hidden;
   }
 
-  HEAD
-
   /*Mobile */
   .foot_swing_box h3 {
-    top: 75%;
+    top: 10%;
     left: 0%;
   }
 
   .foot_swing_box img {
-    width: 300%;
-    position: relative;
-    bottom: 160px;
-    left: -100%;
+    width: 100%;
+    top: 20%;
+    left: 0%;
     z-index: -1;
   }
 
-  .foot_swing_box img {
-    width: 300%;
-    position: relative;
-    bottom: 160px;
-    left: -100%;
-    z-index: -1;
-  }
-
-  /*Mobile */
-  .red_chair_box {
-    width: 46%;
-    height: 40%;
-    margin: 4% 0% 0% 2%;
-    background-color: white;
-    float: right;
-    overflow: hidden;
-  }
-
-  /*Mobile */
-  .red_chair_box {
-    width: 46%;
-    height: 40%;
-    margin: 4% 0% 0% 2%;
-    background-color: white;
-    float: right;
-    overflow: hidden;
-  }
-
-  .red_chair_box h3 {
-    top: 75%;
-    right: 0%;
-  }
-
-  .red_chair_box img {
-    width: 200%;
-    position: relative;
-    bottom: 100px;
-    right: 52%;
-    z-index: -1;
+  .newsfeed_section {
+    height: 1000px;
   }
 
   /*Mobile */
@@ -1460,6 +1392,7 @@ footer {
     justify-content: space-around;
   }
 
+  <<<<<<< HEAD
 
   /*Mobile */
   .pon_rev1 {
@@ -1496,7 +1429,21 @@ footer {
     float: right;
   }
 
-  
+  .poncho_contact_section {
+    /*border: 1px solid red;*/
+    display: flex;
+    width: 100%;
+    height: 350px;
+  }
+
+  /*Mobile */
+  .poncho_contact {
+    border: 1px solid blue;
+    display: flex;
+    height: 300px;
+    width: 92%;
+    margin: auto;
+  }
 
   /*Mobile  ABOUT US */
   .about_us_section {
@@ -1529,6 +1476,21 @@ footer {
     padding: 5%;
   }
 
+  .poncho_contact_section {
+    /*border: 1px solid red;*/
+    display: flex;
+    width: 100%;
+    height: 350px;
+  }
+
+  /*Mobile */
+  .poncho_contact {
+    border: 1px solid blue;
+    display: flex;
+    height: 300px;
+    width: 92%;
+    margin: auto;
+  }
 
   /*Mobile  ABOUT US */
   .about_us_section {
@@ -1775,7 +1737,21 @@ footer {
     height: 600px;
   }
 
+  .poncho_contact_section {
+    /*border: 1px solid red;*/
+    display: flex;
+    width: 100%;
+    height: 350px;
+  }
 
+  /*Mobile */
+  .poncho_contact {
+    border: 1px solid blue;
+    display: flex;
+    height: 300px;
+    width: 92%;
+    margin: auto;
+  }
 
   /* Mobile WEBSHOP */
   .big_product_image {
@@ -1877,7 +1853,21 @@ footer {
     float: right;
   }
 
+  .poncho_contact_section {
+    /*border: 1px solid red;*/
+    display: flex;
+    width: 100%;
+    height: 350px;
+  }
 
+  /*Mobile */
+  .poncho_contact {
+    border: 1px solid blue;
+    display: flex;
+    height: 300px;
+    width: 92%;
+    margin: auto;
+  }
 
   /* Mobile WEBSHOP */
   /* WEBSHOP */
@@ -2354,8 +2344,52 @@ footer {
   margin: auto;
 }
 
+/* Tablet */
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
 
+/* Tablet */
+.poncho_contact {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
 
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+.poncho_contact {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+.poncho_contact {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
 
 /*  Tablet ABOUT US*/
 .about_us_section {
@@ -2493,19 +2527,15 @@ footer {
 /* Tablet */
 .product_description {
   /*  border: 1px solid red;*/
-   display: flex;
+  display: flex;
   width: 48%;
-  height: 300px;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  height: 600px;
 }
 
 /* Tablet */
 .description_text_chair {
   /*  border: 1px solid blue;*/
   display: flex;
-    flex-wrap: wrap;
   height: 550px;
   width: 92%;
   margin: auto;
@@ -2532,16 +2562,18 @@ footer {
 .contact_section {
   /*border: 1px solid red;*/
   display: flex;
+  flex-wrap: wrap;
   width: 48%;
-    margin-top: -100px;
-  height: 550px;
+  height: 350px;
+    margin-top: -350px;
+    
 }
 
 /* Tablet */
 .contact {
   /*  border: 1px solid blue;*/
   display: flex;
-  height: 500px;
+  height: 300px;
   width: 92%;
   margin: auto;
 }
@@ -2563,19 +2595,18 @@ footer {
 
 .contact_section {
   /*border: 1px solid red;*/
-   display: flex;
+  display: flex;
   width: 48%;
-    margin-top: -100px;
-  height: 550px;
+  height: 350px;
 }
 
 /* /* Tablet PONCHO */
 .contact {
   /*  border: 1px solid blue;*/
   display: flex;
-  width: 48%;
-    margin-top: -100px;
-  height: 550px;
+  height: 300px;
+  width: 92%;
+  margin: auto;
 }
 
 /* PONCHO */
@@ -2600,7 +2631,7 @@ footer {
 .contact {
   /*  border: 1px solid blue;*/
   display: flex;
-  height: 500px;
+  height: 300px;
   width: 92%;
   margin: auto;
 }
@@ -2695,7 +2726,28 @@ footer {
 }
 
 /* Tablet */
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
 
+/* Tablet */
+.poncho_contact {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
 
 /* Tablet WEB SHOP */
 .webshop_section {}
@@ -2730,7 +2782,7 @@ footer {
 
 .about_text {
   height: 150px;
-  width: 100%;
+  width: 80%;
 }
 
 .newsfeed_section {
