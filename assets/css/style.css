@@ -2520,7 +2520,18 @@ footer {
   .banner_section {
     height: 350px;
   }
-    
+    footer{
+        height: 200px;
+    }
+    .footer_links{
+        right: 25%;
+    }
+    .reviews{
+        width: 100%;
+    }
+    .rev3, .rev4{
+        display: none;
+    }
     .contact_section {
   /*border: 1px solid red;*/
   display: flex;
@@ -3025,7 +3036,7 @@ footer {
   }
     .contact_heading{
         width: 100%;
-        margin-left: 0;
+        margin-left: 4%;
         
         /*    display: flex;
     width: 48%;
@@ -3038,10 +3049,9 @@ footer {
   /*border: 1px solid red;*/
   display: flex;
   width: 48%;
-  height: 350px;
+  height: 450px;
   color: black;
-    bottom: 20%;
-        bottom: 150px;
+    bottom: 50px;
         flex-wrap: wrap;
 }
 }
