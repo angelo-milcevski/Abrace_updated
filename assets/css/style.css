@@ -664,6 +664,19 @@ float: right;
 .footer_links a{
     color: white;
 }
+
+.fa-facebook:hover{
+    cursor: pointer;
+    color: #e5e5e5;
+}
+.fa-linkedin:hover{
+    cursor: pointer;
+    color: #e5e5e5;
+}
+.fa-instagram:hover{
+    cursor: pointer;
+    color: #e5e5e5;
+}
 .part1 {}
 
 .part2 {}
