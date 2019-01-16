@@ -3,7 +3,6 @@
 * {
   scroll-behavior: smooth;
   cursor: default;
-  text-align: center;
   position: relative;
   z-index: 0;
 }
@@ -29,6 +28,11 @@ body {
   cursor: pointer;
 }
 
+.copyright{
+    bottom: 0;
+    text-align: center;
+    width: 100%
+}
 a {
   color: black;
 }
@@ -167,7 +171,6 @@ form {
   border-radius: 2px;
   padding: 12px 45px;
   float: right;
-  margin-right: 151px;
 }
 
 label {
@@ -359,18 +362,22 @@ main {
   z-index: 1;
   left: -35%;
   top: 10%;
+          text-align: center;
+
 }
 
 .welcome {
   z-index: 1;
   left: 35%;
   top: -40px;
+    text-align: center;
 }
 
 .sentence {
   z-index: 1;
   left: 35%;
   top: -25px;
+    text-align: center;
 }
 
 .webshop_banner img {
@@ -398,6 +405,10 @@ main {
   .banner img {
     top: -200px;
   }
+    
+    
+    
+    
 }
 
 @media only screen and (min-width: 1200px) and (max-width:1350px) {
@@ -426,6 +437,7 @@ main {
   padding-bottom: -100px;
   width: 80%;
   font-size: 30px;
+    text-align: center;
 }
 
 .about_text {
@@ -447,6 +459,7 @@ main {
   background-color: #f2f2f2;
   display: block;
   z-index: 1;
+    text-align: center;
 }
 
 .blue_chair_box:hover {
@@ -601,7 +614,7 @@ main {
   margin: 0% 5% 0% 5%;
   display: flex;
   justify-content: space-between;
-  padding: 0% 5% 0% 5%;
+  padding: 0% 5% 5% 8%;
   align-items: center;
 }
 
@@ -619,18 +632,21 @@ footer {
   justify-content: space-between;
   padding: 0% 5% 0% 5%;
   align-items: center;
-  background-color: white;
+  background-color: #1d353f;
+    color: white;
+    flex-wrap: wrap;
 }
 
 .footer_info {
-  border: 1px solid black;
+    width: 100%
 }
 
 .footer_heading {
   display: block;
   float: left;
-  bottom: 30%;
-  border: 1px solid black;
+    width: 100%;
+  bottom: 0;
+font-size: 20px;
 }
 
 .footer_list {
@@ -639,6 +655,15 @@ footer {
   list-style: none;
 }
 
+.footer_links{   
+float: right;
+    font-size: 40px;
+    display: inline-block;
+}
+
+.footer_links a{
+    color: white;
+}
 .part1 {}
 
 .part2 {}
@@ -728,7 +753,7 @@ footer {
 /* CHAIR PRODUCT */
 .chair_product_section {
   width: 100%;
-  height: 1200px;
+  height: 100%;
   margin: 0%;
   background-color: white;
   display: flex;
@@ -811,6 +836,7 @@ footer {
   margin: auto;
   flex-wrap: wrap;
   text-align: left;
+    bottom: 30%;
 }
 
 .reviews_section {
@@ -839,6 +865,7 @@ footer {
   height: 10%;
   width: 90%;
   float: left;
+    margin-left: -8%;
 }
 
 .rev1 {
@@ -884,6 +911,7 @@ footer {
   display: block;
   width: 100%;
   height: 20%;
+    margin-left: 5%;
 }
 
 .contact {
@@ -1061,13 +1089,591 @@ footer {
   margin: auto;
 }
 
+
+/* Tablet PONCHO PRODUCT*/
+.poncho_product_section {
+  width: 100%;
+  height: 1000px;
+  border: 2px solid
+    /* #B5B5B5*/
+    #B5B5B5;
+  border-radius: 12px;
+  margin: 0%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Tablet */
+.poncho_gallery {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+  height: 600px;
+}
+
+/* Tablet */
+.big_product_image {
+  border: 1px solid blue;
+  display: flex;
+  height: 350px;
+  width: 92%;
+  margin: auto;
+}
+
+/* Tablet */
+.small_left_image {
+  border: 1px solid blue;
+  display: flex;
+  height: 150px;
+  width: 42%;
+  margin: auto;
+}
+
+/* Tablet */
+.small_middle_image {
+  border: 1px solid blue;
+  display: flex;
+  height: 150px;
+  width: 42%;
+  margin: auto;
+}
+
+/* Tablet */
+.small_right_image {
+  display: none;
+}
+
+/* Tablet */
+.poncho_product_description {
+  /*  border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 600px;
+}
+
+/* Tablet */
+.poncho_description {
+  border: 1px solid blue;
+  display: flex;
+  height: 550px;
+  width: 92%;
+  margin: auto;
+}
+
+/* Tablet */
+.poncho_reviews_section {
+  /*  border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+/* Tablet */
+.poncho_reviews {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+/* Tablet */
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+/* Tablet */
+.poncho_contact {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+.poncho_contact {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+.poncho_contact {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+/*  Tablet ABOUT US*/
+.about_us_section {
+  width: 100%;
+  height: 525px;
+  margin: 0%;
+  background-color: white;
+  display: block;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Tablet */
+.employees {
+  width: 60%;
+  height: 350px;
+  margin: -6% 0% 0% 0%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding-bottom: 12.5%;
+}
+
+/* Tablet */
+.about_us_heading {
+  padding: 5%;
+  height: 50px;
+  width: 100%;
+  margin-top: -100px;
+  margin-left: -132.5px;
+}
+
+/* Tablet */
+.about_us_box {
+  margin-top: -250px;
+  width: 150%;
+  margin-left: -130px;
+  height: 100px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Tablet */
+.member1, .member2, .member3 {
+  display: inline-block;
+  padding: 0% 2.5%;
+}
+
+/* Tablet */
+.about_us_box img {
+  height: 150px;
+  width: 150px;
+  border-radius: 90px;
+}
+
+/* Tablet */
+.our_story_heading {
+  width: 20%;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.our_story_heading {
+  width: 20%;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.our_story {}
+
+/* Tablet Blue chair */
+.our_story_heading {
+  width: 20%;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.our_story {
+  margin-bottom: 100px;
+}
+
+/* Tablet Blue chair */
+.chair_product_section {
+  width: 100%;
+  height: 1600px;
+  margin: 0%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+
+
+/* Tablet */
+.top_product {
+  /*border: 1px solid blue;*/
+  display: flex;
+  height: auto;
+  width: 92%;
+  margin: auto;
+}
+
+/* Tablet */
+.bottom_left_product {
+  /*  border: 1px solid blue;*/
+  display: flex;
+  height: 150px;
+  width: 42%;
+  margin: auto;
+}
+
+/* Tablet */
+.bottom_right_product {
+  /*  border: 1px solid blue;*/
+  display: flex;
+  height: 150px;
+  width: 42%;
+  margin: auto;
+}
+
+
+/* Tablet */
+.description_text_chair {
+  /*  border: 1px solid blue;*/
+  display: flex;
+  height: 550px;
+  width: 92%;
+  margin: auto;
+    text-align: left;
+    bottom: 30%;
+}
+
+/* Tablet */
+.reviews_section {
+  /*  border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+/* Tablet */
+.reviews {
+  /*  border: 1px solid blue;*/
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+
+
+/* Tablet */
+.contact {
+  /*  border: 1px solid blue;*/
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+.reviews_section {
+  /*  border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+.reviews {
+  /*  border: 1px solid blue;*/
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+.contact_section {
+  /*border: 1px solid red;*/
+     display: flex;
+    width: 48%;
+    height: 350px;
+    color: black;
+    bottom: 20%;
+    bottom: 30%;
+    flex-wrap: wrap;
+}
+
+.rev0, .contact_heading{
+    font-size: 18px;
+
+}
+
+.rev1, .rev2{
+    text-align: left;
+}
+
+/* /* Tablet PONCHO */
+.contact {
+  /*  border: 1px solid blue;*/
+ display: flex;
+    height: 450px;
+    width: 92%;
+    margin: auto;
+}
+
+.contact input{
+    width: 100%;
+}
+
+/* PONCHO */
+.poncho_product_section {}
+
+.reviews_section {
+  /*  border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+.reviews {
+  /*  border: 1px solid blue;*/
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+
+
+/* PONCHO */
+.poncho_product_section {
+  width: 100%;
+  height: 1000px;
+  margin: 0%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* Tablet */
+.poncho_gallery {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 48%;
+  height: 600px;
+}
+
+/* Tablet */
+.big_product_image {
+  border: 1px solid blue;
+  display: flex;
+  height: 350px;
+  width: 92%;
+  margin: auto;
+}
+
+/* Tablet */
+.small_left_image {
+  border: 1px solid blue;
+  display: flex;
+  height: 150px;
+  width: 42%;
+  margin: auto;
+}
+
+/* Tablet */
+.small_middle_image {
+  border: 1px solid blue;
+  display: flex;
+  height: 150px;
+  width: 42%;
+  margin: auto;
+}
+
+/* Tablet */
+.small_right_image {
+  display: none;
+}
+
+/* Tablet */
+.poncho_product_description {
+  /*  border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 600px;
+}
+
+/* Tablet */
+.poncho_description {
+  border: 1px solid blue;
+  display: flex;
+  height: 550px;
+  width: 92%;
+  margin: auto;
+}
+
+/* Tablet */
+.poncho_reviews_section {
+  /*  border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+/* Tablet */
+.poncho_reviews {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+/* Tablet */
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+/* Tablet */
+.poncho_contact {
+  border: 1px solid blue;
+  display: flex;
+  height: 300px;
+  width: 92%;
+  margin: auto;
+}
+
+.poncho_contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+}
+
+/* Tablet WEB SHOP */
+.webshop_section {}
+
+/* Tablet WEB SHOP */
+.webshop_section {
+  width: 100%;
+  height: 525px;
+  margin: 0%;
+  background-color: white;
+  display: block;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+/*WEB SHOP */
+.webshop_section {
+  width: 100%;
+  height: 525px;
+  margin: 0%;
+  background-color: white;
+  display: block;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.about_section {
+  height: 450px;
+}
+
+.read_more_about {}
+
+.about_text {
+  height: 150px;
+  width: 80%;
+}
+
+.newsfeed_section {}
+
+.heading_news {
+  font-size: 30px;
+  margin-top: 5%;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+.news_text {
+  left: 5%;
+  bottom: 15%;
+  font-size: 18px;
+  text-align: left;
+}
+
+.subscribe {
+  bottom: 15%;
+  line-height: 2;
+  font-size: 20px;
+  width: 150%;
+}
+
+.sub {
+  bottom: 2.5%;
+    text-align: center;
+}
+
+.sub input {
+  width: 40%;
+}
+
+.heading_sponsors {
+  width: 100%;
+    text-align: center;
+}
+
+footer {
+  height: 180px;
+}
+}
+
 /* Responsive*/
 /* Mobile resolution*/
 @media only screen and (max-width: 350px) {
   body {
     display: block;
   }
-
+.rev3, .rev4{
+   display: none;
+    
+}
   /*Mobile navigation here*/
   header {
     width: 100%;
@@ -1119,6 +1725,7 @@ footer {
     z-index: 1;
     left: 0%;
     top: 2.5%;
+      text-align: center;
   }
 
   .welcome {
@@ -1243,7 +1850,6 @@ footer {
     top: 20%;
     left: 0%;
     z-index: -1;
-<<<<<<< HEAD
   }
 
   .newsfeed_section {
@@ -1267,12 +1873,10 @@ footer {
 
   .sponsor1, .sponsor2, .sponsor3, .sponsor4 {
     width: 48%;
-=======
   }
 
   .newsfeed_section {
     height: 1000px;
->>>>>>> a3fa32fa9682977f567483dfd1c7a5fdf8d50a26
   }
 
   /*Mobile */
@@ -1420,7 +2024,6 @@ footer {
     justify-content: space-around;
   }
 
-  <<<<<<< HEAD
 
   /*Mobile */
   .pon_rev1 {
@@ -1905,6 +2508,37 @@ footer {
   .banner_section {
     height: 350px;
   }
+    
+    .contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 350px;
+    align-content: center;
+        padding-top: 80%;
+}
+
+    .reviews_section{
+        display: flex;
+    width: 100%;
+    height: 350px;
+    }
+.chair_gallery{
+    width: 100%;
+    display: flex;
+    }
+    
+.chair_gallery img{
+    transform: scale(0.8);
+    width: 100%;
+}
+
+.product_description {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    }
 
   .banner img {
     transform: scale(2.1);
@@ -1984,6 +2618,8 @@ footer {
     left: 25%;
     z-index: -1;
   }
+    
+    
 }
 
 .subscribe {
@@ -1995,6 +2631,23 @@ footer {
     top: -50px;
   }
 
+    .contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 350px;
+    align-content: center;
+        padding-top: 50%;
+}
+
+    .reviews_section{
+        display: flex;
+    width: 100%;
+    height: 350px;
+    }
+    
+    
   .foot_swing_box h3 {
     top: 15%;
     left: -30%;
@@ -2060,6 +2713,26 @@ footer {
     left: 25%;
     z-index: -1;
   }
+    
+    
+            /* TABLET CHAIR PRODUCT */
+
+.chair_gallery{
+    width: 100%;
+    display: flex;
+    }
+    
+.chair_gallery img{
+    transform: scale(0.8);
+    width: 80%;
+    padding-right: 100%;
+}
+
+.product_description {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    }
 }
 
 /*Tablet Version */
@@ -2078,6 +2751,12 @@ footer {
     z-index: 1;
     overflow: hidden;
   }
+.reviews_section {
+  /*  border: 1px solid red;*/
+  display: flex;
+  width: 100%;
+  height: 350px;
+}
 
   .logo {
     width: 40%;
@@ -2092,6 +2771,37 @@ footer {
     left: -10px;
   }
 
+    
+        /* TABLET CHAIR PRODUCT */
+
+.chair_gallery{
+    width: 100%;
+    display: flex;
+    }
+    
+.chair_gallery img{
+    transform: scale(0.8);
+    width: 80%;
+    padding-right: 100%;
+}
+
+.product_description {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    }
+
+.contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 350px;
+    align-content: center;
+    padding-top: 40%;
+}
+
+    
   /*Tablet content holder*/
   main {
     width: 100%;
@@ -2116,6 +2826,8 @@ footer {
     z-index: 1;
     left: 0%;
     top: 2.5%;
+            text-align: center;
+
   }
 
   .welcome {
@@ -2267,6 +2979,11 @@ footer {
     align-items: center;
   }
 
+    
+    
+
+    
+    
   .part1 {}
 
   /* Tablet PONCHO PRODUCT*/
@@ -2279,577 +2996,7 @@ footer {
   .part5 {}
 }
 
-/* Tablet PONCHO PRODUCT*/
-.poncho_product_section {
-  width: 100%;
-  height: 1000px;
-  border: 2px solid
-    /* #B5B5B5*/
-    #B5B5B5;
-  border-radius: 12px;
-  margin: 0%;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  z-index: 1;
-  overflow: hidden;
-}
 
-/* Tablet */
-.poncho_gallery {
-  /*border: 1px solid red;*/
-  display: flex;
-  flex-wrap: wrap;
-  width: 48%;
-  height: 600px;
-}
-
-/* Tablet */
-.big_product_image {
-  border: 1px solid blue;
-  display: flex;
-  height: 350px;
-  width: 92%;
-  margin: auto;
-}
-
-/* Tablet */
-.small_left_image {
-  border: 1px solid blue;
-  display: flex;
-  height: 150px;
-  width: 42%;
-  margin: auto;
-}
-
-/* Tablet */
-.small_middle_image {
-  border: 1px solid blue;
-  display: flex;
-  height: 150px;
-  width: 42%;
-  margin: auto;
-}
-
-/* Tablet */
-.small_right_image {
-  display: none;
-}
-
-/* Tablet */
-.poncho_product_description {
-  /*  border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 600px;
-}
-
-/* Tablet */
-.poncho_description {
-  border: 1px solid blue;
-  display: flex;
-  height: 550px;
-  width: 92%;
-  margin: auto;
-}
-
-/* Tablet */
-.poncho_reviews_section {
-  /*  border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-/* Tablet */
-.poncho_reviews {
-  border: 1px solid blue;
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-/* Tablet */
-.poncho_contact_section {
-  /*border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-/* Tablet */
-.poncho_contact {
-  border: 1px solid blue;
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-.poncho_contact_section {
-  /*border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-.poncho_contact {
-  border: 1px solid blue;
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-.poncho_contact_section {
-  /*border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-.poncho_contact {
-  border: 1px solid blue;
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-/*  Tablet ABOUT US*/
-.about_us_section {
-  width: 100%;
-  height: 525px;
-  margin: 0%;
-  background-color: white;
-  display: block;
-  z-index: 1;
-  overflow: hidden;
-}
-
-/* Tablet */
-.employees {
-  width: 60%;
-  height: 350px;
-  margin: -6% 0% 0% 0%;
-  background-color: #f2f2f2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-  padding-bottom: 12.5%;
-}
-
-/* Tablet */
-.about_us_heading {
-  padding: 5%;
-  height: 50px;
-  width: 100%;
-  margin-top: -100px;
-  margin-left: -132.5px;
-}
-
-/* Tablet */
-.about_us_box {
-  margin-top: -250px;
-  width: 150%;
-  margin-left: -130px;
-  height: 100px;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-/* Tablet */
-.member1, .member2, .member3 {
-  display: inline-block;
-  padding: 0% 2.5%;
-}
-
-/* Tablet */
-.about_us_box img {
-  height: 150px;
-  width: 150px;
-  border-radius: 90px;
-}
-
-/* Tablet */
-.our_story_heading {
-  width: 20%;
-  height: 50px;
-  margin-top: 40px;
-}
-
-.our_story_heading {
-  width: 20%;
-  height: 50px;
-  margin-top: 40px;
-}
-
-.our_story {}
-
-/* Tablet Blue chair */
-.our_story_heading {
-  width: 20%;
-  height: 50px;
-  margin-top: 40px;
-}
-
-.our_story {
-  margin-bottom: 100px;
-}
-
-/* Tablet Blue chair */
-.chair_product_section {
-  width: 100%;
-  height: 1000px;
-  margin: 0%;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.chair_gallery {
-  /*border: 1px solid red;*/
-  display: flex;
-  flex-wrap: wrap;
-  width: 48%;
-  height: 600px;
-}
-
-/* Tablet */
-.top_product {
-  /*border: 1px solid blue;*/
-  display: flex;
-  height: 350px;
-  width: 92%;
-  margin: auto;
-}
-
-/* Tablet */
-.bottom_left_product {
-  /*  border: 1px solid blue;*/
-  display: flex;
-  height: 150px;
-  width: 42%;
-  margin: auto;
-}
-
-/* Tablet */
-.bottom_right_product {
-  /*  border: 1px solid blue;*/
-  display: flex;
-  height: 150px;
-  width: 42%;
-  margin: auto;
-}
-
-/* Tablet */
-.product_description {
-  /*  border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 600px;
-}
-
-/* Tablet */
-.description_text_chair {
-  /*  border: 1px solid blue;*/
-  display: flex;
-  height: 550px;
-  width: 92%;
-  margin: auto;
-}
-
-/* Tablet */
-.reviews_section {
-  /*  border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-/* Tablet */
-.reviews {
-  /*  border: 1px solid blue;*/
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-/* Tablet */
-.contact_section {
-  /*border: 1px solid red;*/
-  display: flex;
-  flex-wrap: wrap;
-  width: 48%;
-  height: 350px;
-    margin-top: -350px;
-    
-}
-
-/* Tablet */
-.contact {
-  /*  border: 1px solid blue;*/
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-.reviews_section {
-  /*  border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-.reviews {
-  /*  border: 1px solid blue;*/
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-.contact_section {
-  /*border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-/* /* Tablet PONCHO */
-.contact {
-  /*  border: 1px solid blue;*/
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-/* PONCHO */
-.poncho_product_section {}
-
-.reviews_section {
-  /*  border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-.reviews {
-  /*  border: 1px solid blue;*/
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-/*  Tablet PONCHO */
-.contact {
-  /*  border: 1px solid blue;*/
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-/* PONCHO */
-.poncho_product_section {
-  width: 100%;
-  height: 1000px;
-  margin: 0%;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  z-index: 1;
-  overflow: hidden;
-}
-
-/* Tablet */
-.poncho_gallery {
-  /*border: 1px solid red;*/
-  display: flex;
-  flex-wrap: wrap;
-  width: 48%;
-  height: 600px;
-}
-
-/* Tablet */
-.big_product_image {
-  border: 1px solid blue;
-  display: flex;
-  height: 350px;
-  width: 92%;
-  margin: auto;
-}
-
-/* Tablet */
-.small_left_image {
-  border: 1px solid blue;
-  display: flex;
-  height: 150px;
-  width: 42%;
-  margin: auto;
-}
-
-/* Tablet */
-.small_middle_image {
-  border: 1px solid blue;
-  display: flex;
-  height: 150px;
-  width: 42%;
-  margin: auto;
-}
-
-/* Tablet */
-.small_right_image {
-  display: none;
-}
-
-/* Tablet */
-.poncho_product_description {
-  /*  border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 600px;
-}
-
-/* Tablet */
-.poncho_description {
-  border: 1px solid blue;
-  display: flex;
-  height: 550px;
-  width: 92%;
-  margin: auto;
-}
-
-/* Tablet */
-.poncho_reviews_section {
-  /*  border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-/* Tablet */
-.poncho_reviews {
-  border: 1px solid blue;
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-/* Tablet */
-.poncho_contact_section {
-  /*border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-/* Tablet */
-.poncho_contact {
-  border: 1px solid blue;
-  display: flex;
-  height: 300px;
-  width: 92%;
-  margin: auto;
-}
-
-.poncho_contact_section {
-  /*border: 1px solid red;*/
-  display: flex;
-  width: 48%;
-  height: 350px;
-}
-
-/* Tablet WEB SHOP */
-.webshop_section {}
-
-/* Tablet WEB SHOP */
-.webshop_section {
-  width: 100%;
-  height: 525px;
-  margin: 0%;
-  background-color: white;
-  display: block;
-  z-index: 1;
-  overflow: hidden;
-}
-
-/*WEB SHOP */
-.webshop_section {
-  width: 100%;
-  height: 525px;
-  margin: 0%;
-  background-color: white;
-  display: block;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.about_section {
-  height: 450px;
-}
-
-.read_more_about {}
-
-.about_text {
-  height: 150px;
-  width: 80%;
-}
-
-.newsfeed_section {}
-
-.heading_news {
-  font-size: 30px;
-  margin-top: 5%;
-}
-
-.news_text {
-  left: 5%;
-  bottom: 15%;
-  font-size: 18px;
-  text-align: left;
-}
-
-.subscribe {
-  bottom: 15%;
-  line-height: 2;
-  font-size: 20px;
-  width: 150%;
-}
-
-.sub {
-  bottom: 2.5%;
-}
-
-.sub input {
-  width: 40%;
-}
-
-.heading_sponsors {
-  width: 100%;
-}
-
-footer {
-  height: 100px;
-}
-}
 
 /*One size smaller as the original*/
 @media only screen and (min-width: 1000px) and (max-width:1409px) {
@@ -2858,9 +3005,24 @@ footer {
   }
 
   .subscribe {
-    left: 300px;
     margin-left: 300px;
+      text-align: center;
   }
+    .contact_heading{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+    .contact_section {
+  /*border: 1px solid red;*/
+  display: flex;
+  width: 48%;
+  height: 350px;
+  color: black;
+    bottom: 20%;
+        bottom: 30%;
+        flex-wrap: wrap;
+}
 }
 
 /*One size larger as the original*/
