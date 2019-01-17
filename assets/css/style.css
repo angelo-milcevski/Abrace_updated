@@ -759,7 +759,10 @@ float: right;
 
 .our_story_heading {}
 
-.our_story {}
+.our_story {
+    left: 10px;
+    padding-bottom: 20px;
+}
 
 /* CHAIR PRODUCT */
 .chair_product_section {
@@ -1262,7 +1265,6 @@ float: right;
 
   /*Mobile */
   .foot_swing_box h3 {
-    top: 10%;
     left: 0%;
   }
 
@@ -2617,14 +2619,12 @@ float: right;
     height: 50px;
     width: 100%;
     margin-top: -100px;
-    margin-left: -132.5px;
   }
 
   /* Tablet */
   .about_us_box {
     margin-top: -250px;
-    width: 150%;
-    margin-left: -130px;
+    width: 110%;
     height: 100px;
     flex-wrap: wrap;
     justify-content: space-around;
