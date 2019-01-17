@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="shortcut icon" href="assets/images/ABRACE_icon.png" />
+  <script src="assets/js/script.js"></script>
+    <!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Arapey|Lora|Raleway" rel="stylesheet">
+
+  <title>ABRACE</title>
+
+  <style>
+
+    /* #read_more, #read_less{
+        padding: 1px 16px;
+        border: none;
+        font-size: 15px;
+        border-radius: 4px;
+        color: white;
+        background-color: #edb95f;
+        cursor: pointer;
+        }
+
+        #read_less{
+            display: none;
+        }
+
+        .rev3{display: none;}*/
+    </style>
+  <script>
+
+
+
+
+    function read_more(){
+
+    var rev3 = document.getElementsByClassName("pon_rev3");
+    var rev4 = document.getElementsByClassName("pon_rev4");
+    var read_more = document.getElementById("read_more");
+    var read_less = document.getElementById("read_less");
+
+        rev3[0].style ="display: inline";
+        rev4[0].style ="display: inline";
+        read_more.style="display:none";
+        read_less.style="display:inline";
+    };
+
+     function read_less(){
+    var rev3 = document.getElementsByClassName("pon_rev3");
+    var rev4 = document.getElementsByClassName("pon_rev4");
+    var read_more = document.getElementsByClassName("read_more");
+    var read_less = document.getElementById("read_less");
+
+        rev3[0].style ="display: none";
+        rev4[0].style ="display: none";
+        read_more[0].style="display:inline";
+        read_less.style="display:none";
+     };
+
+
+
+    </script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="assets/images/ABRACE_logo.svg" alt="abrace logo" id="logo">
+      </a>
+    </div>
+
+    <div class="menu" onclick="slide()"><i class="fas fa-bars"></i></div>
+    <div class="cart" onclick="location.href ='webshop.html'"><i class="fas fa-shopping-cart"></i></div>
+  </header>
+
+  <div class="slider">
+    <i class="fas fa-times" onclick="close_slider()"></i><br>
+
+    <div class="slider_links">
+      <a href="index.html">Home</a>
+
+      <a onclick="dropdown()">Products <i class="fas fa-angle-down"></i></a>
+      <div class="dropdown_content" id="dropdown_content" style="display: none;">
+        <a href="chair_product.html">Chair</a>
+        <a href="poncho_product.html">Poncho</a>
+
+
+      </div>
+      <a href="about.html">About us</a>
+    </div>
+  </div>
+
+  <main>
+    <div class="poncho_product_section">
+      <div class="poncho_gallery">
+        <div class="big_product_image">
+
+          <img src="assets/images/ABRACE_pillow.png" alt="pillow" id="toppillow" onclick="pillow()" class="hidden">
+
+          <img src="assets/images/ABRACE_poncho.png" alt="poncho" id="topponcho" onclick="poncho()" class="hidden">
+
+        </div>
+
+        <div class="small_left_image">
+
+          <img src="assets/images/ABRACE_poncho.png" alt="poncho" id="left_poncho" onclick="poncho()">
+          <img src="assets/images/ABRACE_pillow.png" alt="full poncho" id="left_full_poncho" onclick="fullponcho()" class="hidden">
+        </div>
+
+
+        <!--  <div class="small_middle_image"></div>-->
+        <div class="small_right_image">
+          <img src="assets/images/ABRACE_pillow.png" alt="pillow" id="rightpillow" onclick="pillow()">
+          <img src="assets/images/ABRACE_bluechair.png" alt="full poncho" id="right_full_poncho" onclick="fullponcho()" class="hidden">
+
+
+
+
+
+        </div>
+      </div>
+      <div class="poncho_product_description">
+        <div class="poncho_description">
+          <h1>THIS IS PONCHO PRODUCT</h1>
+          <li class="poncho_list">
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+            <ul>point one of the un-ordered list of the un-ordered list</ul>
+
+          </li>
+        </div>
+      </div>
+      <div class="poncho_reviews_section">
+        <div class="poncho_reviews">
+          <div class="pon_rev0">
+            <h2>Reviews</h2>
+          </div>
+          <div class="pon_rev1">
+            <p>“I thought it was very comfortable
+              and wish we still had it”
+              <br>- (translated) Girl, 17 years old,
+              infantile autism, anxiety, OCD, turmoil
+              in body and obsessive thoughts
+            </p>
+          </div>
+          <div class="pon_rev2">
+            <p>“By using ABRACE, I experienced that
+              it reduced my excessive thoughts and
+              enabled me to relax more”
+              <br>- (translated) Woman, 41 years old,
+              stress, ADHD and depression
+            </p>
+          </div>
+
+          <button class="read_more" onclick="read_more()">Read More</button>
+          <div class="rev3">
+            <p>“That feeling of being cradled, like cradling
+              a child - that calming effect. Like when you
+              sit and rock back and forth, it’s exactly the
+              same feeling”
+              <br>- (translated) Nurse, Head of Department
+              in a closed psychiatric department
+            </p>
+
+          </div>
+          <div class="pon_rev4" id="pon_rev4">
+            <p>“We had a patient who walked the halls, to calm
+              herself. She tried sitting in it, she thought it
+              was really comfortable..... she actually
+              didn’t have to walk around in the hallway,
+              she could actually sit there”
+              <br>- (translated) Nurse in a psychiatric emergency section</p>
+          </div>
+          <button class="read_less" onclick="read_less()">Read Less</button>
+
+        </div>
+      </div>
+      <div class="poncho_contact_section">
+        <div class="poncho_contact">
+
+          <form>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="First Name">
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="Last Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email">
+
+            <label for="comment">Comment:</label>
+            <input type="text" id="comment" name="comment" placeholder="Write a comment">
+
+            <br> <button class="button" id="submit">Submit</button>
+
+
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="part1">part1</div>
+    <div class="part2">part2</div>
+    <div class="part3">part3</div>
+    <div class="part4">part4</div>
+    <div class="part5">part5</div>
+  </footer>
+</body>
+
+</html>
