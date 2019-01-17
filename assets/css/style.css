@@ -31,6 +31,10 @@ body {
   cursor: pointer;
 }
 
+.our_story p{
+    text-align: left;
+}
+
 a {
   color: black;
 }
@@ -1078,6 +1082,19 @@ float: right;
   body {
     display: block;
   }
+    .logo{
+        50%;
+    }
+    
+     .footer_links{
+        width: 100%;
+        padding-left: 0;
+    }
+     .footer_list{
+        width: 100%;
+        padding-left: 0;
+    }
+    
 
   /*Mobile navigation here*/
   header {
@@ -1903,10 +1920,30 @@ float: right;
 
 @media only screen and (min-width: 350px) and (max-width:600px) {
   .logo {
-    width: 50%;
-    left: -8%;
+    width: 40%;
+    left: -6%;
   }
-
+    
+    .blue_chair_box h3{
+        margin-left: 10%;
+        
+    }    .foot_swing_box h3{
+        margin-left: 10%;
+    }
+    
+    .footer_links{
+        width: 100%;
+        padding-left: 0;
+    }
+     .footer_list{
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    
+    .sub input{
+        width: 100%;
+    }
   .menu {
     left: 15%;
   }
@@ -1930,6 +1967,7 @@ float: right;
 
   .about_text {
     width: 120%;
+      margin-bottom: 50%;
   }
 
   .foot_swing_box h3 {
@@ -2005,6 +2043,7 @@ float: right;
   .news_text {
     width: 150%;
     bottom: 10%;
+      font-size: 14px;
   }
 
   .subscribe {
@@ -2220,7 +2259,10 @@ float: right;
     z-index: 1;
     overflow: hidden;
   }
-
+    .foot_swing_box img{
+        top: 40px;
+        left: 5%;
+    }
   .logo {
     width: 40%;
     left: -50px;
